@@ -34,7 +34,6 @@ import Home3Newsletter from "@/app/home-3/Newsletter";
 
 // Home 4 Components
 import Home4Banner from "@/app/home-4/Banner";
-import Home4About from "@/app/home-4/About";
 import Home4Facilities from "@/app/home-4/Facilities";
 import Home4Footer from "@/app/home-4/Footer";
 import Home4Gallery from "@/app/home-4/Gallery";
@@ -197,9 +196,9 @@ export default function ShowcasePage() {
           <ComponentWrapper title="Apartment (Home 4)">
             <Home4Apartment />
           </ComponentWrapper>
-          <ComponentWrapper title="About (Home 4)">
+          {/* <ComponentWrapper title="About (Home 4)">
             <Home4About />
-          </ComponentWrapper>
+          </ComponentWrapper> */}
           <ComponentWrapper title="Service (Home 4)">
             <Home4Service />
           </ComponentWrapper>
