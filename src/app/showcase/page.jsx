@@ -96,7 +96,7 @@ const ComponentWrapper = ({ title, children }) => (
 
 export default function ShowcasePage() {
   return (
-    <div className="container mx-auto py-10 px-4">
+    <div className="">
       <h1 className="text-4xl font-bold mb-10 text-center">Component Showcase</h1>
       <p className="text-center mb-10">Displaying all available components from the project.</p>
 
