@@ -64,29 +64,7 @@ const GDPRCookie = ({ settings }) => {
   if (!showBanner) return null;
 
   return (
-    <div className="gdpr-cookie-banner">
-      <h2>{mergedSettings.title}</h2>
-      <p>{mergedSettings.message}</p>
-
-      {isAdvanced && (
-        <div>
-          {mergedSettings.cookieTypes.map((cookie) => (
-            <label key={cookie.value}>
-              <input
-                type="checkbox"
-                checked={cookiePreferences[cookie.value] ?? cookie.checked}
-                disabled={cookie.value === "essential"}
-                onChange={() => handlePreferenceChange(cookie.value)}
-              />
-              {cookie.type}
-            </label>
-          ))}
-        </div>
-      )}
-
-      <button onClick={handleAcceptAll}>{mergedSettings.acceptBtnLabel}</button>
-      <button onClick={handleCustomize}>{mergedSettings.advancedBtnLabel}</button>
-    </div>
+    null
   );
 };
 
