@@ -15,6 +15,7 @@ import FooterOne from "../home-1/FooterOne";
 import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from '../home-1/GDPRCookie';
 import Home5Blog from '../home-5/Blog'
+import RoomSix from '../room/RoomSix'
 function page() {
   return (
     <>
@@ -28,8 +29,8 @@ function page() {
       <TopBar />
       <HeaderOne />
       <BannerTwo />
-      <AdvanceForm />
-      <Home5Blog/>
+   
+      <RoomSix/>
       {/* <AboutTwo /> */}
       {/* <FacilitiesTwo />
       <RoomTwo posts={posts} />

@@ -13,6 +13,8 @@ import NewsletterOne from './Newsletter'
 import FooterTwo from './Footer'
 import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
+import GalleryOne from '../home-1/GalleryOne'
+import Home5Blog from '../home-5/Blog'
 
 function page() {
     return (
@@ -26,14 +28,17 @@ function page() {
             />
             <HeaderTwo />
             <BannerThree />
-            <AdvanceForm />
-            <AboutThree />
-            <FacilitiesTwo />
-            <RoomTwo posts={posts} />
+            {/* <AdvanceForm /> */}
+            {/* <AboutThree /> */}
+                <GalleryOne />
+            {/* <FacilitiesTwo /> */}
+            {/* <RoomTwo posts={posts} /> */}
             <TestimonialTwo />
-            <VideoThree />
-            <OfferThree />
-            <NewsletterOne />
+            {/* <VideoThree /> */}
+    <NewsletterOne />
+            {/* <OfferThree /> */}
+            <Home5Blog/>
+        
             <FooterTwo />
             <BackToTop />
         </>

@@ -13,6 +13,8 @@ import NewsletterTwo from './Newsletter'
 import FooterFour from './Footer'
 import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
+import NewsletterOne from '../home-3/Newsletter'
+
 
 function page() {
   return (
@@ -26,14 +28,17 @@ function page() {
       />
       <HeaderFour />
       <BannerFive />
-      <AdvanceForm />
-      <AboutFour />
-      <RoomThree posts={posts} />
-      <ServiceTwo />
-      <FacilitiesFour />
+      {/* <AdvanceForm /> */}
+      {/* <AboutFour /> */}
+      {/* <RoomThree posts={posts} /> */}
+      {/* <ServiceTwo /> */}
+      {/* <FacilitiesFour /> */}
+      
+    
       <TestimonialFive />
+        <NewsletterOne />
       <BlogTwo />
-      <NewsletterTwo />
+      {/* <NewsletterTwo /> */}
       <FooterFour />
       <BackToTop />
     </>

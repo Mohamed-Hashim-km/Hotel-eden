@@ -14,14 +14,15 @@ import GalleryOne from "../home-1/GalleryOne";
 import FooterOne from "../home-1/FooterOne";
 import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from '../home-1/GDPRCookie';
+import ServiceFive from '../service/Service';
 function page() {
-    useEffect(() => {
-        document.documentElement.setAttribute("data-theme", "dark");
-        return () => {
-            document.documentElement.removeAttribute("data-theme"); // Cleanup when leaving this page
-        };
+    // useEffect(() => {
+    //     document.documentElement.setAttribute("data-theme", "dark");
+    //     return () => {
+    //         document.documentElement.removeAttribute("data-theme"); // Cleanup when leaving this page
+    //     };
 
-    }, []);
+    // }, []);
     return (
         <>
             <GDPRCookie
@@ -33,14 +34,15 @@ function page() {
             />
             <TopBar />
             <HeaderOne />
-            <BannerOne />
-            <AdvanceForm />
-            <AboutOne />
+            {/* <BannerOne />
+            <AdvanceForm /> */}
+            {/* <AboutOne />
             <FacilitiesOne />
             <RoomOne className="pt-120" />
             <TestimonialOne />
             <VideoOne />
-            <OfferOne />
+            <OfferOne /> */}
+             <ServiceFive />
             <GalleryOne />
             <FooterOne />
             <BackToTop />

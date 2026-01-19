@@ -1,21 +1,15 @@
 'use client'
-import React, { useEffect } from 'react'
+
 import TopBar from "../home-1/TopBar";
 import HeaderOne from "../home-dark/Header";
-import BannerVideo from './Banner';
-import AdvanceForm from "../home-1/AdvanceForm";
-import AboutOne from "../home-1/About";
-import FacilitiesOne from "../home-1/FacilitiesOne";
-import RoomOne from "../home-1/RoomOne";
-import TestimonialOne from "../home-1/TestimonialOne";
-import VideoOne from "../home-1/VideoOne";
-import OfferOne from "../home-1/OfferOne";
+
 import GalleryOne from "../home-1/GalleryOne";
 import FooterOne from "../home-1/FooterOne";
 import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from '../home-1/GDPRCookie';
 import RoomEight from '../room/RoomEight';
 import AboutThree from '../home-3/About';
+import ServiceFive from "../service/Service";
 function page() {
     // useEffect(() => {
     //     document.documentElement.setAttribute("data-theme", "dark");
@@ -36,7 +30,7 @@ function page() {
             <TopBar />
             <HeaderOne />
             <AboutThree />
-            <RoomEight />
+            {/* <RoomEight /> */}
             {/* <BannerVideo />
             <AdvanceForm /> */}
             {/* <AboutOne />
@@ -45,7 +39,8 @@ function page() {
             <TestimonialOne />
             <VideoOne />
             <OfferOne /> */}
-            <GalleryOne />
+            {/* <GalleryOne /> */}
+             <ServiceFive />
             <FooterOne />
             <BackToTop />
         </>

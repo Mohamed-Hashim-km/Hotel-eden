@@ -12,6 +12,9 @@ import ServiceOne from './Service'
 import postsData from '../data/data-post.json';
 import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
+import RoomSix from '../room/RoomSix'
+import NewsletterOne from '../home-3/Newsletter'
+
 
 function page() {
     return (
@@ -25,13 +28,15 @@ function page() {
             />
             <HeaderThree />
             <BannerFour />
-            <ApartmentOne />
-            <FacilitiesThree />
-            <TestimonialFour />
+             <RoomSix/>
+            {/* <ApartmentOne /> */}
+            {/* <FacilitiesThree /> */}
+            {/* <TestimonialFour />
             <VideoFour />
             <BlogOne posts={postsData} />
-            <ServiceOne />
-            <GalleryThree />
+            <ServiceOne /> */}
+            {/* <GalleryThree /> */}
+            <NewsletterOne />
             <FooterThree />
             <BackToTop />
         </>

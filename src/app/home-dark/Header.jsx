@@ -135,6 +135,16 @@ function HeaderOne() {
                                                                 <span>Hotel Seaside</span>
                                                             </Link>
                                                         </div>
+                                                         <div className="menu__item">
+                                                            <Link href="/home-10">
+                                                                <img
+                                                                    src="/assets/images/menu/08.webp"
+                                                                    height={250}
+                                                                    alt=""
+                                                                />
+                                                                <span>Page-10</span>
+                                                            </Link>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
