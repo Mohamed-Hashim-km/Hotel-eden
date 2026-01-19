@@ -14,22 +14,10 @@ function BannerTwo() {
         <>
             {/* banner area */}
             <div className="rts__section banner__area is__home__one banner__height banner__center">
-                <Swiper
-                    className="banner__slider overflow-hidden"
-                    modules={[Navigation]}
-                    direction="horizontal"
-                    slidesPerView={1}
-                    loop={true}
-                    navigation={{
-                        nextEl: ".next",
-                        prevEl: ".prev",
-                    }}
-                    speed={1000}
-                    effect="slide"
-                >
+                
                     <div className="swiper-wrapper">
                         {/* single slider item */}
-                        <SwiperSlide>
+                     
                             <div className="banner__slider__image">
                                 <img src="/assets/images/banner/4.webp" alt="" />
                             </div>
@@ -37,29 +25,28 @@ function BannerTwo() {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-10">
                                         <div className="banner__slide__content">
-                                            <span className="h6 subtitle__icon">
+                                            {/* <span className="h6 subtitle__icon">
                                                 Welcome to Our Hotel
-                                            </span>
-                                            <h1>Luxury Stay Hotel Experience Comfort &amp; Elegance</h1>
+                                            </span> */}
+                                            <h1>Discover the Charm of Karwar</h1>
                                             <p className="sub__text">
-                                                Choosing Bokinn was one of the best decisions we've ever
-                                                made. They have proven to be a reliable and innovative
-                                                partner
+                                               Surrounded by pristine beaches, rivers and scenic landscapes, Karwar is a beautiful coastal town known for its calm atmosphere and natural beauty. From quiet waterfronts to local culture and cuisine, Karwar offers the perfect setting for a relaxed getaway.
+
                                             </p>
                                             <Link
                                                 href="/room-three"
                                                 className="theme-btn btn-style fill no-border "
                                             >
-                                                <span>Discover Room</span>
+                                                <span>Book Now</span>
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </SwiperSlide>
+                     
                         {/* single slider item end */}
                         {/* single slider item */}
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="banner__slider__image">
                                 <img src="assets/images/banner/slides-1.webp" alt="" />
                             </div>
@@ -84,7 +71,7 @@ function BannerTwo() {
                                     </div>
                                 </div>
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         {/* single slider item end */}
                     </div>
                     <div className="rts__slider__nav">
@@ -129,7 +116,7 @@ function BannerTwo() {
                             </div>
                         </div>
                     </div>
-                </Swiper>
+            
             </div>
             {/* banner area end */}
         </>

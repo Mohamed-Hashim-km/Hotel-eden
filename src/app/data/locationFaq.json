@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "Where is Hotel Eden located in Karwar?",
+    "answer": "Hotel Eden is located near Mulla Stop in the heart of Karwar."
+  },
+  {
+    "id": 2,
+    "question": "How far is the hotel from the railway station and bus stand?",
+    "answer": "About 7 km from the railway station and a short drive from the bus stand."
+  },
+  {
+    "id": 3,
+    "question": "Is Hotel Eden close to Karwar’s beaches?",
+    "answer": "Yes, popular beaches like Rabindranath Tagore Beach and Devbagh Beach are easily accessible."
+  },
+  {
+    "id": 4,
+    "question": "Which tourist places are near Hotel Eden?",
+    "answer": "Rabindranath Tagore Beach, Kurumgad Island, Sadashivgad Fort, and Oyster Rock Lighthouse are nearby."
+  },
+  {
+    "id": 5,
+    "question": "Is the hotel centrally located in Karwar?",
+    "answer": "Yes, the hotel is centrally located, making it easy to explore the city."
+  }
+]

@@ -4,65 +4,65 @@
         "slug": "Live-Elegantly-in-Our-Contemporary-Suite-for-Apartment",
         "image": "/assets/images/pages/blog/1.webp",
         "blogImage": "/assets/images/pages/blog/1.webp",
-        "category": "Tulip – The Gourmet Restaurant",
-        "title": "",
+        "category": "Half Moon Beach",
+        "title": "Distance: 6 km",
         "price": "100$",
         "author" : "Amin",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "March 26, 2024",
-        "description": "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals."
+        "description": "A peaceful crescent-shaped beach surrounded by cliffs and greenery. Ideal for sunset views, swimming, or simply disconnecting from the crowds in a quiet, scenic setting."
     },
     {
         "id": 2,
         "slug": "Spacious-One-Bedroom-in-Prime-Location",
         "image": "/assets/images/pages/blog/2.webp",
         "blogImage": "/assets/images/pages/blog/2.webp",
-        "category": "Food & Forest – Rooftop Dining",
-        "title": "",
+        "category": "Mahabaleshwar Temple",
+        "title": "Distance: 10 km",
         "price": "130$",
         "author" : "Mack",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings."
+        "description": "One of Gokarna’s most sacred landmarks, this ancient temple is home to the revered Atmalinga. A must-visit for those seeking spirituality, history, and a glimpse into the town’s cultural soul."
     },
     {
         "id": 3,
         "slug": "Comfortable-Room-with-En-Suite-Bathroom",
         "image": "/assets/images/pages/blog/3.webp",
         "blogImage": "/assets/images/pages/blog/3.webp",
-        "category": "Oyster Bay – Seafood Speciality",
-        "title": "",
+        "category": "Om Beach",
+        "title": "Distance: 7 km",
         "price": "150$",
         "author" : "Rubel",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste."
+        "description": "Famous for its natural Om-shaped shoreline, this is one of Gokarna’s most iconic beaches. Perfect for relaxing, light water activities, and enjoying beachside cafés with ocean views."
     },
     {
         "id": 4,
         "slug": "Elegant-Apartment-with-Private-Terrace",
         "image": "/assets/images/pages/blog/4.webp",
         "blogImage": "/assets/images/pages/blog/4.webp",
-        "category": "The Golden Leaf Spa",
-        "title": "",
+        "category": "Kudle Beach",
+        "title": "Distance: 6 km",
         "price": "100$",
         "author" : "Ashiq",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance."
+        "description": "A laid-back, palm-lined beach known for calm waters and beautiful sunsets. Great for long walks, quiet evenings, and a slower, more relaxed beach experience."
     },
     {
         "id": 5,
         "slug": "Experience-the-Majesty-of-the-Mountains",
         "image": "/assets/images/pages/blog/1.webp",
         "blogImage": "/assets/images/pages/blog/1.webp",
-        "category": "Terminal 5 – Events & Celebrations",
-        "title": "",
+        "category": "Mirjan Fort",
+        "title": "Distance: 21 km",
         "price": "100$",
         "author" : "Ashiq",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations."
+        "description": "A 16th-century historic fort surrounded by lush greenery and massive laterite walls. Ideal for photography, heritage walks, and exploring the region’s rich past."
     }
 
 ]

@@ -11,6 +11,8 @@ import AboutThree from "./home-3/About";
 import FacilitiesOne from "./home-1/FacilitiesOne";
 import RoomOne from "./home-1/RoomOne";
 import RoomsShowcase from "./home-1/RoomsShowcase";
+import FaqHomeOne from "./home-1/FaqHomeOne";
+import EventShowcase from "./home-1/EventShowcase";
 import TestimonialOne from "./home-1/TestimonialOne";
 import VideoOne from "./home-1/VideoOne";
 import OfferOne from "./home-1/OfferOne";
@@ -21,6 +23,8 @@ import RoomNine from "./room/RoomNine";
 import Home5Blog from "./home-5/Blog";
 import NewsletterOne from "../app/home-3/Newsletter";
 import HeaderTwo from "../app/home-3/Header";
+import posts from './data/data-post.json'
+import faqData from "./data/faq.json";
 
 function Page() {
   // Use PascalCase for Next.js pages
@@ -41,12 +45,20 @@ function Page() {
       <AboutThree />
       <FacilitiesOne />
       <RoomsShowcase />
-      <RoomOne className="pt-120" />
+      <RoomOne className="" />
 
       <GalleryOne />
       <TestimonialOne />
-      <AboutThree />
-      <Home5Blog />
+
+      <EventShowcase
+        title="Signature Spaces For Every Occasion"
+        description="From elegant receptions and private celebrations to professional conferences and corporate meetings, Hotel Eden offers thoughtfully designed event spaces that adapt to your vision."
+        buttonText="Explore Event Spaces"
+        buttonLink="#"
+        imageSrc=""
+      />
+      <FaqHomeOne faqData={faqData} title="Everything You Need to Know" description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."/>
+      <Home5Blog  data={posts}/>
       {/* <VideoOne /> */}
       {/* <OfferOne /> */}
 

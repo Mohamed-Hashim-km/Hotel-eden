@@ -8,7 +8,7 @@ function NewsletterOne() {
                 <div className="container">
                     <div className="row">
                         <div className="footer__newsletter is__separate wow fadeInUp">
-                            <span className="h2 mb-0">Join Our Newsletter</span>
+                            <span className="h2 mb-0">Your perfect stay in Karwar is just a moment away.</span>
                             <div className="rts__form">
                                 <form action="#" method="post">
                                     <input

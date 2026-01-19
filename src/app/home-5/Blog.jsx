@@ -2,7 +2,7 @@ import React from 'react'
 import PostThree from '../blog/PostThree'
 import posts from '../data/data-post.json'
 
-function BlogTwo() {
+function BlogTwo({data,title,description}) {
     return (
         <>
             {/* blog style */}
@@ -11,14 +11,14 @@ function BlogTwo() {
                     <div className="row justify-content-center text-center mb-40">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="section__topbar">
-                                <span className="h6 subtitle__icon__three mx-auto">Blog</span>
-                                <h2 className="section__title">See Our Latest Blog</h2>
+                                <span className="h6 subtitle__icon__three mx-auto">{title||"Blog"}</span>
+                                <p className="section__title">{description||"See Our Latest Blog"}</p>
                             </div>
                         </div>
                     </div>
                     {/* row end */}
                     <div className="row g-30">
-                        {posts.map((data, index) => {
+                        {data.map((data, index) => {
                             return (
                                 <div key={index} className="col-lg-6 col-xl-4 col-md-6">
                                     {
@@ -29,11 +29,12 @@ function BlogTwo() {
                                             Category={data.category}
                                             AuthorImg={data.authorImg}
                                             Author={data.author}
+                                            Description={data.description}
                                         />
                                     }
                                 </div>
                             )
-                        }).slice(4, 7)}
+                        })}
                     </div>
                 </div>
             </div>

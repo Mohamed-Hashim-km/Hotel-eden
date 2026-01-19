@@ -1,23 +1,26 @@
-import React from 'react'
+import React from "react";
 import TopBar from "../home-1/TopBar";
 import HeaderOne from "../home-1/Header";
-import BannerTwo from './Banner';
-import AdvanceForm from '../home-1/AdvanceForm';
-import AboutTwo from './About';
-import FacilitiesTwo from './Facilities';
-import RoomTwo from './Room';
-import posts from '../data/data-room.json';
-import TestimonialTwo from './Testimonial';
-import VideoTwo from './Video';
-import OfferTwo from './Offer';
-import GalleryTwo from './Gallery';
+import BannerTwo from "./Banner";
+import AdvanceForm from "../home-1/AdvanceForm";
+import AboutTwo from "./About";
+import FacilitiesTwo from "./Facilities";
+import RoomTwo from "./Room";
+import posts from "../data/location.json";
+import TestimonialTwo from "./Testimonial";
+import VideoTwo from "./Video";
+import OfferTwo from "./Offer";
+import GalleryTwo from "./Gallery";
 import FooterOne from "../home-1/FooterOne";
 import BackToTop from "../home-1/BackToTop";
-import GDPRCookie from '../home-1/GDPRCookie';
-import Home5Blog from '../home-5/Blog'
-import RoomSix from '../room/RoomSix'
-import NewsletterOne from '../home-3/Newsletter';
-import HeaderTwo from '../home-3/Header';
+import GDPRCookie from "../home-1/GDPRCookie";
+import Home5Blog from "../home-5/Blog";
+import RoomSix from "../room/RoomSix";
+import NewsletterOne from "../home-3/Newsletter";
+import HeaderTwo from "../home-3/Header";
+import CommonAmenities from "./CommonAmenities";
+import FaqHomeOne from "../home-1/FaqHomeOne";
+import faqData from "../data/locationFaq.json";
 
 function page() {
   return (
@@ -25,15 +28,19 @@ function page() {
       <GDPRCookie
         settings={{
           title: "Accept Cookies & privacy",
-          message: "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
+          message:
+            "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
           expires: 90, // Cookie expiration in days
         }}
       />
-       <HeaderTwo />
+      <HeaderTwo />
       <BannerTwo />
-   
-      <RoomSix/>
-       <NewsletterOne />
+
+ <Home5Blog data={posts}/>
+      <CommonAmenities />
+       <FaqHomeOne faqData={faqData} />
+            
+      <NewsletterOne />
       {/* <AboutTwo /> */}
       {/* <FacilitiesTwo />
       <RoomTwo posts={posts} />
@@ -43,9 +50,9 @@ function page() {
       <GalleryTwo />
 
       <BackToTop /> */}
-            <FooterOne />
+      <FooterOne />
     </>
-  )
+  );
 }
 
-export default page
+export default page;

@@ -18,6 +18,12 @@ import TopBar from '../home-1/TopBar'
 import HeaderOne from '../home-1/Header'
 import BannerOne from '../home-1/Banner'
 import HeaderTwo from '../home-3/Header'
+import Home5Blog from '../home-5/Blog'
+import posts from '../data/gokarna.json'
+import CommonAmenities from '../home-2/CommonAmenities'
+import FaqHomeOne from '../home-1/FaqHomeOne'
+import faqData from '../data/faqGokarana.json'
+import FooterOne from '../home-1/FooterOne'
 
 function page() {
     return (
@@ -30,8 +36,11 @@ function page() {
                 }}
             />
          <HeaderTwo/>
-                <BannerOne />
-             <RoomSix/>
+                <BannerFour />
+                <Home5Blog title="Everything You’re Looking For" description="Discover the best of Gokarna’s beaches, spirituality and heritage all within easy reach of Eden Ember Castle." data={posts}/>
+           
+           <CommonAmenities/>
+           <FaqHomeOne faqData={faqData}/>
             {/* <ApartmentOne /> */}
             {/* <FacilitiesThree /> */}
             {/* <TestimonialFour />
@@ -40,7 +49,7 @@ function page() {
             <ServiceOne /> */}
             {/* <GalleryThree /> */}
             <NewsletterOne />
-            <FooterThree />
+            <FooterOne />
             <BackToTop />
         </>
     )

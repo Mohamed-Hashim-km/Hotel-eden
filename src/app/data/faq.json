@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "What kind of hotel is Hotel Eden?",
+    "answer": "A designer boutique hotel in Karwar offering stays, dining, wellness, and event spaces."
+  },
+  {
+    "id": 2,
+    "question": "Who is Hotel Eden ideal for?",
+    "answer": "Perfect for families, couples, and business travellers."
+  },
+  {
+    "id": 3,
+    "question": "What dining options are available?",
+    "answer": "Three in-house restaurants: Tulip, Food & Forest and Oyster Bay."
+  },
+  {
+    "id": 4,
+    "question": "Do you have spa and wellness facilities?",
+    "answer": "Yes, we have The Golden Leaf Spa along with fitness and recreation facilities."
+  },
+  {
+    "id": 5,
+    "question": "Can I host events at Hotel Eden?",
+    "answer": "Yes, we offer banquet and conference spaces for events and celebrations."
+  }
+]

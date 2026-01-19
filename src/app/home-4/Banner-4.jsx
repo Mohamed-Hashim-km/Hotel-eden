@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-function BannerOne() {
+function BannerFour() {
     return (
         <>
             {/* banner area */}
@@ -151,4 +151,4 @@ function BannerOne() {
     )
 }
 
-export default BannerOne
+export default BannerFour

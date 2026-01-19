@@ -4,65 +4,78 @@
         "slug": "Live-Elegantly-in-Our-Contemporary-Suite-for-Apartment",
         "image": "/assets/images/pages/blog/1.webp",
         "blogImage": "/assets/images/pages/blog/1.webp",
-        "category": "Tulip – The Gourmet Restaurant",
-        "title": "",
+        "category": "Rabindranath Tagore Beach",
+        "title": "Distance: 1.5 km",
         "price": "100$",
         "author" : "Amin",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "March 26, 2024",
-        "description": "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals."
+        "description": " A popular city beach perfect for evening walks, sea views and relaxing by the waterfront."
     },
     {
         "id": 2,
         "slug": "Spacious-One-Bedroom-in-Prime-Location",
         "image": "/assets/images/pages/blog/2.webp",
         "blogImage": "/assets/images/pages/blog/2.webp",
-        "category": "Food & Forest – Rooftop Dining",
-        "title": "",
+        "category": "Devbagh Beach",
+        "title": "Distance: 7 km",
         "price": "130$",
         "author" : "Mack",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings."
+        "description": "A serene and less crowded beach, ideal for water sports, dolphin spotting, and peaceful sunsets."
     },
     {
         "id": 3,
         "slug": "Comfortable-Room-with-En-Suite-Bathroom",
         "image": "/assets/images/pages/blog/3.webp",
         "blogImage": "/assets/images/pages/blog/3.webp",
-        "category": "Oyster Bay – Seafood Speciality",
-        "title": "",
+        "category": "Kurumgad Island",
+        "title": "Distance: 8 km",
         "price": "150$",
         "author" : "Rubel",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste."
+        "description": "A scenic island accessible by boat, known for its temple, adventure activities, and beautiful coastal views."
     },
     {
         "id": 4,
-        "slug": "Elegant-Apartment-with-Private-Terrace",
+        "slug": "Oyster Rock Lighthouse",
         "image": "/assets/images/pages/blog/4.webp",
         "blogImage": "/assets/images/pages/blog/4.webp",
-        "category": "The Golden Leaf Spa",
-        "title": "",
+        "category": " Oyster Rock Lighthouse",
+        "title": "Distance: 10 km",
         "price": "100$",
         "author" : "Ashiq",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance."
+        "description": "A historic lighthouse on an island offering breathtaking panoramic views of the Arabian Sea."
     },
     {
         "id": 5,
         "slug": "Experience-the-Majesty-of-the-Mountains",
         "image": "/assets/images/pages/blog/1.webp",
         "blogImage": "/assets/images/pages/blog/1.webp",
-        "category": "Terminal 5 – Events & Celebrations",
-        "title": "",
+        "category": " Tilmati Beach",
+        "title": "Distance: 12 km",
         "price": "100$",
         "author" : "Ashiq",
         "authorImg": "/assets/images/icon/person.svg",
         "publishedDate": "20 Aug 2024",
-        "description": "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations."
+        "description": "Famous for its unique black sand, this quiet beach is perfect for a peaceful and picturesque escape."
+    },
+    {
+        "id": 1,
+        "slug": "Live-Elegantly-in-Our-Contemporary-Suite-for-Apartment",
+        "image": "/assets/images/pages/blog/1.webp",
+        "blogImage": "/assets/images/pages/blog/1.webp",
+        "category": " Sadashivgad Fort",
+        "title": "Distance: 5 km",
+        "price": "100$",
+        "author" : "Amin",
+        "authorImg": "/assets/images/icon/person.svg",
+        "publishedDate": "March 26, 2024",
+        "description": "A historic hilltop fort overlooking the Kali River, ideal for history lovers and scenic viewpoints."
     }
 
 ]

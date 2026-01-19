@@ -8,7 +8,8 @@ function PostThree(props) {
         Title,
         Category,
         Author,
-        AuthorImg
+        AuthorImg,
+        Description
     } = props;
     return (
         <>
@@ -27,10 +28,12 @@ function PostThree(props) {
                     <Link href="#" className="blog__item__meta__cat">
                         {Category || "Urban Oasis Living"}
                     </Link>
-                    <Link href={`/blog/${Slug || "details"}`} className="blog__item__meta__title">
+                    {Title && <h6>{Title}</h6>}
+                    <p className="blog__item__meta__description">{Description || "Why I say old chap that is spiffing in my flat such a fibber mufty mush, porkies barney<br/>pukka only a quid a what a load of rubbish good time."}</p>
+                    {/* <Link href={`/blog/${Slug || "details"}`} className="blog__item__meta__title">
                         <h6>{Title || "Live Elegantly in Our Contemporary Suite for Apartment"}</h6>
-                    </Link>
-                    <div className="blog__item__meta__list">
+                    </Link> */}
+                    {/* <div className="blog__item__meta__list">
                         <span className="blog__item__meta__list__item">
                             <img src="/assets/images/icon/calendar.svg" alt="" />
                             March 26, 2024
@@ -41,7 +44,7 @@ function PostThree(props) {
                                 {Author || "Amin"}
                             </Link>
                         </span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

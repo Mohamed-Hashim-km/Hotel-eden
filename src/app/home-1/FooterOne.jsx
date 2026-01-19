@@ -46,8 +46,8 @@ function FooterOne() {
                                     />
                                 </Link>
                                 <p className="font-sm max-290 mt-20">
-                                    Each room features plush bedding, high-quality linens, and a
-                                    selection of ensure a restful night's sleep.
+                                    Your boutique destination for stays, dining and celebrations in Karwar.
+
                                 </p>
                             </div>
                             <div className="rts__widget">
