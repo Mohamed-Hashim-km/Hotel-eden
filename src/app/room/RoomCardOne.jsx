@@ -6,7 +6,8 @@ function RoomCardOne(props) {
         Slug,
         Img,
         Title,
-        Price
+        Price,
+        Description
     } = props;
     return (
         <div className="room__slide__box radius-6">
@@ -24,14 +25,18 @@ function RoomCardOne(props) {
                     <h5>{Title || "The Ritz-Carlton"}</h5>
                 </Link>
                 <div className="room__content__meta">
-                    <span>
+                    {/* <span>
                         <i className="flaticon-construction" /> 35 sqm
                     </span>
                     <span>
                         <i className="flaticon-user" />2 Person
+                    </span> */}
+                    <span>
+                        {/* <i className="flaticon-user" /> */}
+                        {Description || '120$'}
                     </span>
                 </div>
-                <span className="h4 rent mb-0 mt-15 d-block">{Price || '120$'}</span>
+                {/* <span className="h4 rent mb-0 mt-15 d-block">{Price || '120$'}</span> */}
             </div>
         </div>
     )

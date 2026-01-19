@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Modal from './Modal';
+import Link from 'next/link';
 // import Modal from './Modal'; // Import the Modal component
 
 function GalleryOne() {
@@ -31,10 +32,23 @@ function GalleryOne() {
           <div className="row position-relative justify-content-center text-center mb-30">
             <div className="col-lg-6 wow fadeInUp">
               <div className="section__topbar">
-                <span className="h6 subtitle__icon__three mx-auto">
+                {/* <span className="h6 subtitle__icon__three mx-auto">
                   Instagram Post
-                </span>
-                <h2 className="section__title">Follow on&nbsp;Instagram</h2>
+                </span> */}
+                <h2 className="section__title">A Culinary Experience for Every Mood
+</h2>
+                <p className="section__subtitle">
+                 From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof.
+
+                </p>
+              <Link
+                                    href="#"
+                                    className="theme-btn btn-style fill no-border wow fadeInUp"
+                                    data-wow-delay=".5s"
+                                >
+                                    <span>Explore All Restaurants
+</span>
+                                </Link>
               </div>
             </div>
           </div>

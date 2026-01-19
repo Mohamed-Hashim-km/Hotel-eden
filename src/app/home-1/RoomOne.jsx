@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import RoomCardOne from '../room/RoomCardOne';
-import posts from '../data/data-room.json';
+import posts from '../data/spaces.json';
 
 function RoomOne({ className }) {
     console.log(posts); // Debug: Check if multiple rooms exist
@@ -18,17 +18,16 @@ function RoomOne({ className }) {
                 <div className="row">
                     <div className="section__wrapper mb-40 wow fadeInUp">
                         <div className="section__content__left">
-                            <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                            {/* <span className="h6 subtitle__icon__two d-block wow fadeInUp">
                                 Room
-                            </span>
-                            <h2 className="content__title h2 lh-1">Our Rooms</h2>
+                            </span> */}
+                            <h2 className="content__title h2 lh-1">Spaces That Inspire Every Stay
+</h2>
                         </div>
                         <div className="section__content__right">
                             <p>
-                                Our rooms offer a harmonious blend of comfort and elegance,
-                                designed to provide an exceptional stay for every guest. Each room
-                                features plush bedding, high-quality linens, and a selection of
-                                pillows to ensure a restful night's sleep.
+                               From wellness and fitness to recreation and seamless service, Hotel Eden offers thoughtfully curated amenities designed to elevate every moment of your stay.
+
                             </p>
                         </div>
                     </div>
@@ -67,6 +66,7 @@ function RoomOne({ className }) {
                                         Img={`${data.image}`}
                                         Title={data.title}
                                         Price={data.price}
+                                        Description={data.description}
                                     />
                                 </SwiperSlide>
                             ))

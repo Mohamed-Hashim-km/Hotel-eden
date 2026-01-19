@@ -21,26 +21,29 @@ function AboutThree() {
                     <div className="row">
                         <div className="about__wrapper">
                             <div className="content">
-                                <span className="h6 subtitle__icon__two d-block wow fadeInUp">
+                                {/* <span className="h6 subtitle__icon__two d-block wow fadeInUp">
                                     About Us
-                                </span>
+                                </span> */}
                                 <h2 className="content__title wow fadeInUp">
-                                    Welcome To Our Moonlit Hotel &amp; Resort
+                                  Built on Years of Trusted Hospitality
+
                                 </h2>
                                 <p className="content__subtitle wow fadeInUp" data-wow-delay=".3s">
-                                    Welcome to Bokinn, where luxury meets comfort in the heart of
-                                    canada. Since 1999, we have been dedicated to providing an
-                                    exceptional stay for our guests, blending modern amenities with
-                                    timeless elegance.Our beautifully designed rooms and suites offer
-                                    stunning views and plush accommodations, ensuring a restful
-                                    retreat whether you're here for business or leisure.
+                                    Backed by years of hospitality experience, Hotel Eden brings together thoughtful design and warm service. Every detail is carefully curated to ensure a comfortable and memorable stay.
+
                                 </p>
+                                <ul className='content__list wow fadeInUp' data-wow-delay=".3s">
+                                    <li><i className="fa-regular fa-check"></i>46 elegantly designed rooms across multiple categories</li>
+                                    <li><i className="fa-regular fa-check"></i>Three distinctive dining experiences under one roof</li>
+                                    <li><i className="fa-regular fa-check"></i>Spa, fitness studio, recreation zone & banquet facilities</li>
+                                </ul>
                                 <Link
                                     href="#"
                                     className="theme-btn btn-style fill no-border wow fadeInUp"
                                     data-wow-delay=".5s"
                                 >
-                                    <span>Learn More</span>
+                                    <span>Discover Our Story
+</span>
                                 </Link>
                             </div>
                             <div className="image ">

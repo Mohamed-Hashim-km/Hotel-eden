@@ -18,9 +18,9 @@ function TestimonialOne() {
                         <div className="d-flex align-items-center justify-content-between position-relative">
                             <div className="section__content__left">
                                 <span className="h6 subtitle__icon__two d-block wow fadeInUp">
-                                    Testimonial
+                                   What Our Guests Love About Us
                                 </span>
-                                <h2 className="content__title h2 lh-1">What Our Client Say</h2>
+                                <p className="content__subtitle wow fadeInUp" data-wow-delay=".3s">From authentic guest experiences and cherished memories, discover why Hotel Eden is the perfect choice for your stay.</p>
                             </div>
                             <div className="slider__navigation">
                                 <div className="nav__btn button-next">

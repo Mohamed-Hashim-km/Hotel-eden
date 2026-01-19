@@ -36,20 +36,19 @@ function BannerOne() {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-10">
                                         <div className="banner__slide__content">
-                                            <span className="h6 subtitle__icon">
-                                                Welcome to Our Hotel
-                                            </span>
-                                            <h1>Luxury Stay Hotel Experience Comfort &amp; Elegance</h1>
+                                            {/* <span className="h6 subtitle__icon">
+                                                A Boutique Stay Designed For You
+                                            </span> */}
+                                            <h1> A Boutique Stay Designed For You</h1>
                                             <p className="sub__text">
-                                                Choosing Bokinn was one of the best decisions we've ever
-                                                made. They have proven to be a reliable and innovative
-                                                partner
+                                               In the heart of Karwar, experience thoughtfully designed rooms, signature dining and warm hospitality shaped by years of experience.
+
                                             </p>
                                             <Link
                                                 href="/room-two"
                                                 className="theme-btn btn-style fill no-border "
                                             >
-                                                <span>Discover Room</span>
+                                                <span>Book Now</span>
                                             </Link>
                                         </div>
                                     </div>
@@ -58,7 +57,7 @@ function BannerOne() {
                         </SwiperSlide>
                         {/* single slider item end */}
                         {/* single slider item */}
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="banner__slider__image">
                                 <img src="/assets/images/banner/2.webp" alt="" />
                             </div>
@@ -83,10 +82,10 @@ function BannerOne() {
                                     </div>
                                 </div>
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         {/* single slider item end */}
                         {/* single slider item */}
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="banner__slider__image">
                                 <img src="/assets/images/banner/banner-3.webp" alt="" />
                             </div>
@@ -111,7 +110,7 @@ function BannerOne() {
                                     </div>
                                 </div>
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         {/* single slider item end */}
                     </div>
                     <div className="rts__slider__nav">

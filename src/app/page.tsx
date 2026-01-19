@@ -10,6 +10,7 @@ import AboutOne from "./home-1/About";
 import AboutThree from "./home-3/About";
 import FacilitiesOne from "./home-1/FacilitiesOne";
 import RoomOne from "./home-1/RoomOne";
+import RoomsShowcase from "./home-1/RoomsShowcase";
 import TestimonialOne from "./home-1/TestimonialOne";
 import VideoOne from "./home-1/VideoOne";
 import OfferOne from "./home-1/OfferOne";
@@ -21,35 +22,38 @@ import Home5Blog from "./home-5/Blog";
 import NewsletterOne from "../app/home-3/Newsletter";
 import HeaderTwo from "../app/home-3/Header";
 
-
-function Page() { // Use PascalCase for Next.js pages
+function Page() {
+  // Use PascalCase for Next.js pages
   return (
     <>
       <GDPRCookie
         settings={{
           title: "Accept Cookies & privacy",
-          message: "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
+          message:
+            "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
           expires: 90, // Cookie expiration in days
         }}
       />
       {/* <TopBar /> */}
-          <HeaderTwo />
+      <HeaderTwo />
       <BannerOne />
       {/* <AdvanceForm /> */}
       <AboutThree />
       <FacilitiesOne />
+      <RoomsShowcase />
       <RoomOne className="pt-120" />
-       <GalleryOne />
+
+      <GalleryOne />
       <TestimonialOne />
-         <AboutThree />
-         <Home5Blog/>
+      <AboutThree />
+      <Home5Blog />
       {/* <VideoOne /> */}
       {/* <OfferOne /> */}
-     
+
       {/* <AdvanceForm/> */}
       <NewsletterOne />
       <FooterOne />
-      
+
       <BackToTop />
     </>
   );

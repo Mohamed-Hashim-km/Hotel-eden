@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "slug": "the-ritz-carlton",
+        "image": "/assets/images/pages/room/1.webp",
+        "bannerImg": "/assets/images/pages/room/1.webp",
+        "title": "Golden Leaf Spa",
+        "price": "100$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":"Relax with signature therapies and wellness experiences."
+    },
+    {
+        "id": 2,
+        "slug": "four-seasons-hotels",
+        "image": "/assets/images/pages/room/2.webp",
+        "bannerImg": "/assets/images/pages/room/2.webp",
+        "title": "Fitness Studio",
+        "price": "130$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":"Stay active with modern equipment in a calm, well-designed space."
+    },
+    {
+        "id": 3,
+        "slug": "waldorf-astoria-hotels",
+        "image": "/assets/images/pages/room/3.webp",
+        "bannerImg": "/assets/images/pages/room/3.webp",
+        "title": "Recreation Zone",
+        "price": "120$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":" Unwind with indoor leisure and spaces designed for relaxation and fun."
+    },
+    {
+        "id": 4,
+        "slug": "the-ritz-carlton-2",
+        "image": "/assets/images/pages/room/4.webp",
+        "bannerImg": "/assets/images/pages/room/4.webp",
+        "title": "24/7 Guest Service",
+        "price": "150$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":"Seamless support and personalized assistance, anytime you need it."
+    }]
