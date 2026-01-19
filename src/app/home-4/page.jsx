@@ -14,7 +14,10 @@ import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
 import RoomSix from '../room/RoomSix'
 import NewsletterOne from '../home-3/Newsletter'
-
+import TopBar from '../home-1/TopBar'
+import HeaderOne from '../home-1/Header'
+import BannerOne from '../home-1/Banner'
+import HeaderTwo from '../home-3/Header'
 
 function page() {
     return (
@@ -26,8 +29,8 @@ function page() {
                     expires: 90, // Cookie expiration in days
                 }}
             />
-            <HeaderThree />
-            <BannerFour />
+         <HeaderTwo/>
+                <BannerOne />
              <RoomSix/>
             {/* <ApartmentOne /> */}
             {/* <FacilitiesThree /> */}

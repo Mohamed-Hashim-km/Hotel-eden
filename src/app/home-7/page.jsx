@@ -29,6 +29,7 @@ function page() {
         }}
       />
       <HeaderOne />
+      <AboutOne />
       <RoomEight />
       <GalleryFour />
       <TestimonialTwo />

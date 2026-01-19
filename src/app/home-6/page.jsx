@@ -17,6 +17,8 @@ import ActivitiesOne from "../activities/Activities";
 import ServiceTwo from "../home-5/Service";
 import GalleryOne from "../home-1/GalleryOne";
 import NewsletterOne from "../home-3/Newsletter";
+import FooterOne from "../home-1/FooterOne";
+import RoomFive from "../home-7/Room";
 
 function page() {
   return (
@@ -31,14 +33,15 @@ function page() {
       />
       <TopBar />
       <HeaderOne />
-      <BannerSix />
+      {/* <BannerSix /> */}
       <AboutOne />
-      <ServiceTwo />
+       <RoomFive posts={posts} />
+      {/* <ServiceTwo /> */}
       <ActivitiesOne />
       {/* <TestimonialSection className="pb-120" /> */}
       <GalleryOne />
           <NewsletterOne />
-      <FooterFive />
+      <FooterOne/>
       <BackToTop />
     </>
   );

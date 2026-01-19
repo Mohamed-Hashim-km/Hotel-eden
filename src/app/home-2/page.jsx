@@ -16,6 +16,9 @@ import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from '../home-1/GDPRCookie';
 import Home5Blog from '../home-5/Blog'
 import RoomSix from '../room/RoomSix'
+import NewsletterOne from '../home-3/Newsletter';
+import HeaderTwo from '../home-3/Header';
+
 function page() {
   return (
     <>
@@ -26,11 +29,11 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <TopBar />
-      <HeaderOne />
+       <HeaderTwo />
       <BannerTwo />
    
       <RoomSix/>
+       <NewsletterOne />
       {/* <AboutTwo /> */}
       {/* <FacilitiesTwo />
       <RoomTwo posts={posts} />
@@ -38,8 +41,9 @@ function page() {
       <VideoTwo />
       <OfferTwo />
       <GalleryTwo />
-      <FooterOne />
+
       <BackToTop /> */}
+            <FooterOne />
     </>
   )
 }

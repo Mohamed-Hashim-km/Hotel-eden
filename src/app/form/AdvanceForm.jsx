@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import WOW from 'wowjs'; // Import DatePicker styles
+// import WOW from 'wowjs'; // Import DatePicker styles
 
 function AdvanceForm() {
-    useEffect(() => {
-        new WOW.WOW().init();
-    }, []);
+    // useEffect(() => {
+    //     new WOW.WOW().init();
+    // }, []);
     const [checkInDate, setCheckInDate] = useState(null);
     const [checkOutDate, setCheckOutDate] = useState(null);
 

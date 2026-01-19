@@ -15,6 +15,7 @@ import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
 import GalleryOne from '../home-1/GalleryOne'
 import Home5Blog from '../home-5/Blog'
+import FooterOne from '../home-1/FooterOne'
 
 function page() {
     return (
@@ -27,7 +28,7 @@ function page() {
                 }}
             />
             <HeaderTwo />
-            <BannerThree />
+            {/* <BannerThree /> */}
             {/* <AdvanceForm /> */}
             {/* <AboutThree /> */}
                 <GalleryOne />
@@ -39,7 +40,7 @@ function page() {
             {/* <OfferThree /> */}
             <Home5Blog/>
         
-            <FooterTwo />
+          <FooterOne />
             <BackToTop />
         </>
     )

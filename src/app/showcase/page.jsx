@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import Link from "next/link";
 
 // Home 1 Components
@@ -12,6 +12,12 @@ import Home1Gallery from "@/app/home-1/GalleryOne";
 import Home1Offer from "@/app/home-1/OfferOne";
 import Home1Video from "@/app/home-1/VideoOne";
 import Home1Testimonial from "@/app/home-1/TestimonialOne";
+import Home1AdvanceForm from "@/app/home-1/AdvanceForm";
+import Home1Modal from "@/app/home-1/Modal";
+import Home1OffcanvasMenu from "@/app/home-1/OffcanvasMenu";
+import Home1RoomOne from "@/app/home-1/RoomOne"; // Distinct from room/RoomOne
+import Home1TopBar from "@/app/home-1/TopBar";
+import Home1GDPR from "@/app/home-1/GDPRCookie";
 
 // Home 2 Components
 import Home2Banner from "@/app/home-2/Banner";
@@ -42,6 +48,7 @@ import Home4Service from "@/app/home-4/Service";
 import Home4Testimonial from "@/app/home-4/Testimonial";
 import Home4Video from "@/app/home-4/Video";
 import Home4Apartment from "@/app/home-4/Apartment";
+import Home4Blog from "@/app/home-4/Blog";
 
 // Home 5 Components
 import Home5Header from "@/app/home-5/Header";
@@ -75,30 +82,115 @@ import Home7Room from "@/app/home-7/Room";
 import Home7Service from "@/app/home-7/Service";
 import Home7Testimonial from "@/app/home-7/Testimonial";
 
-// Common / Other Pages
-import Contact from "@/app/contact/Contact";
+// Home Dark & Video
+import HomeDarkHeader from "@/app/home-dark/Header";
+import HomeVideoBanner from "@/app/home-video/Banner";
+
+// About Components
+import AboutFacilities from "@/app/about/Facilities";
+import AboutTeam from "@/app/about/Team";
+
+// Blog Components
 import BlogOne from "@/app/blog/BlogOne";
-import Activities from "@/app/activities/Activities";
+import BlogDetailsMain from "@/app/blog/BlogDetailsMain";
+import BlogInner from "@/app/blog/BlogInner";
+import BlogThree from "@/app/blog/BlogThree";
+import BlogTwo from "@/app/blog/BlogTwo";
+import BlogPostFour from "@/app/blog/PostFour";
+import BlogPostOne from "@/app/blog/PostOne";
+import BlogPostThree from "@/app/blog/PostThree";
+import BlogPostTwo from "@/app/blog/PostTwo";
+import PagesBlogBanner from "@/app/pages/components/blog-details/BlogBanner";
+
+// Contact Components
+import Contact from "@/app/contact/Contact";
+
+// Event Components
 import Event from "@/app/event/Event";
+import EventNewsletter from "@/app/event/Newsletter";
+import EventService from "@/app/event/Service";
+
+// Gallery Components
 import Gallery from "@/app/gallery/Gallery";
+
+// Service Components
 import ServicePageService from "@/app/service/Service";
+
+// Restaurant Components
 import ResturantAbout from "@/app/resturant/About";
+import ResturantFoodMenu from "@/app/resturant/FoodMenu";
+import ResturantGallery from "@/app/resturant/Gallery";
+
+// Room Components
+import RoomCardOne from "@/app/room/RoomCardOne";
+import RoomCardTwo from "@/app/room/RoomCardTwo";
+import RoomCardThree from "@/app/room/RoomCardThree";
+import RoomCardFour from "@/app/room/RoomCardFour";
+import RoomCardFive from "@/app/room/RoomCardFive";
+import RoomCardSix from "@/app/room/RoomCardSix";
+import RoomOne from "@/app/room/RoomOne";
+import RoomTwo from "@/app/room/RoomTwo";
+import RoomThree from "@/app/room/RoomThree";
+import RoomFour from "@/app/room/RoomFour";
+import RoomFive from "@/app/room/RoomFive";
+import RoomSix from "@/app/room/RoomSix";
+import RoomSeven from "@/app/room/RoomSeven";
+import RoomEight from "@/app/room/RoomEight";
+import RoomNine from "@/app/room/RoomNine";
+
+// Activities
+import Activities from "@/app/activities/Activities";
+
+// Form Components
+import FormAdvanceForm from "@/app/form/AdvanceForm";
+import FormAdvanceFormTwo from "@/app/form/AdvanceFormTwo";
+import FormLoginForm from "@/app/form/LoginForm";
+import FormSignUpForm from "@/app/form/SignUpForm";
+
+// Helper Components
+import Breadcrumb from "@/app/breadcrumb/Breadcrumb";
 
 // Error Boundary / Safe Wrapper for Components
 const ComponentWrapper = ({ title, children }) => (
   <div className="border border-gray-300 rounded-lg p-6 my-8 shadow-sm">
     <h3 className="text-xl font-bold mb-4 text-primary underline">{title}</h3>
-    <div className="bg-white relative overflow-hidden">
+    <div className="bg-white relative overflow-hidden text-black">
       <Suspense fallback={<div>Loading Component...</div>}>{children}</Suspense>
     </div>
   </div>
 );
 
+// Wrapper for Home 1 Modal
+const Home1ModalWrapper = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="p-4">
+      <button className="theme-btn btn-style" onClick={() => setIsOpen(true)}>
+        Open Modal Demo
+      </button>
+      <Home1Modal isOpen={isOpen} closeModal={() => setIsOpen(false)} imageSrc="/assets/images/items/modal-1.jpg" />
+    </div>
+  );
+};
+
+// Wrapper for Home 1 Offcanvas
+const Home1OffcanvasWrapper = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="p-4">
+      <button className="theme-btn btn-style" onClick={() => setIsOpen(true)}>
+        Open Offcanvas Menu
+      </button>
+      <Home1OffcanvasMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+    </div>
+  );
+};
+
 export default function ShowcasePage() {
   return (
-    <div className="">
+    <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-10 text-center">Component Showcase</h1>
-      <p className="text-center mb-10">Displaying all available components from the project.</p>
+      <p className="text-center mb-10">Displaying various components from the project (including sub-components).</p>
 
       <div className="space-y-12">
         <section>
@@ -106,8 +198,20 @@ export default function ShowcasePage() {
           <ComponentWrapper title="Header (Home 1)">
             <Home1Header />
           </ComponentWrapper>
+          <ComponentWrapper title="Top Bar (Home 1)">
+            <Home1TopBar />
+          </ComponentWrapper>
+          <ComponentWrapper title="Offcanvas Menu (Home 1)">
+            <Home1OffcanvasWrapper />
+          </ComponentWrapper>
           <ComponentWrapper title="Banner (Home 1)">
             <Home1Banner />
+          </ComponentWrapper>
+          <ComponentWrapper title="Advance Form (Home 1)">
+            <Home1AdvanceForm />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room One (Home 1)">
+            <Home1RoomOne />
           </ComponentWrapper>
           <ComponentWrapper title="About (Home 1)">
             <Home1About />
@@ -126,6 +230,12 @@ export default function ShowcasePage() {
           </ComponentWrapper>
           <ComponentWrapper title="Testimonial (Home 1)">
             <Home1Testimonial />
+          </ComponentWrapper>
+          <ComponentWrapper title="Modal (Home 1)">
+            <Home1ModalWrapper />
+          </ComponentWrapper>
+          <ComponentWrapper title="GDPR Cookie (Home 1)">
+            <Home1GDPR />
           </ComponentWrapper>
           <ComponentWrapper title="Footer (Home 1)">
             <Home1Footer />
@@ -196,9 +306,9 @@ export default function ShowcasePage() {
           <ComponentWrapper title="Apartment (Home 4)">
             <Home4Apartment />
           </ComponentWrapper>
-          {/* <ComponentWrapper title="About (Home 4)">
-            <Home4About />
-          </ComponentWrapper> */}
+          <ComponentWrapper title="Blog (Home 4)">
+            <Home4Blog />
+          </ComponentWrapper>
           <ComponentWrapper title="Service (Home 4)">
             <Home4Service />
           </ComponentWrapper>
@@ -310,27 +420,170 @@ export default function ShowcasePage() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Common / Other Pages</h2>
-          <ComponentWrapper title="Contact Page Component">
-            <Contact />
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Other Home Variants</h2>
+          <ComponentWrapper title="Home Dark Header">
+            <HomeDarkHeader />
+          </ComponentWrapper>
+          <ComponentWrapper title="Home Video Banner">
+            <HomeVideoBanner />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">About Page Components</h2>
+          <ComponentWrapper title="About Facilities">
+            <AboutFacilities />
+          </ComponentWrapper>
+          <ComponentWrapper title="About Team">
+            <AboutTeam />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Blog Components</h2>
+          <ComponentWrapper title="Pages Blog Banner">
+            <PagesBlogBanner />
           </ComponentWrapper>
           <ComponentWrapper title="Blog One">
             <BlogOne />
           </ComponentWrapper>
-          <ComponentWrapper title="Activities">
-            <Activities />
+          <ComponentWrapper title="Blog Two">
+            <BlogTwo />
           </ComponentWrapper>
+          <ComponentWrapper title="Blog Three">
+            <BlogThree />
+          </ComponentWrapper>
+          <ComponentWrapper title="Blog Details Main">
+            <BlogDetailsMain id="1" />
+          </ComponentWrapper>
+          <ComponentWrapper title="Blog Inner">
+            <BlogInner />
+          </ComponentWrapper>
+          <ComponentWrapper title="Post One (Card)">
+            <BlogPostOne />
+          </ComponentWrapper>
+          <ComponentWrapper title="Post Two (Card)">
+            <BlogPostTwo />
+          </ComponentWrapper>
+          <ComponentWrapper title="Post Three (Card)">
+            <BlogPostThree />
+          </ComponentWrapper>
+          <ComponentWrapper title="Post Four (Card)">
+            <BlogPostFour />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Event Components</h2>
           <ComponentWrapper title="Event">
             <Event />
+          </ComponentWrapper>
+          <ComponentWrapper title="Event Newsletter">
+            <EventNewsletter />
+          </ComponentWrapper>
+          <ComponentWrapper title="Event Service">
+            <EventService />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Restaurant Components</h2>
+          <ComponentWrapper title="Restaurant About">
+            <ResturantAbout />
+          </ComponentWrapper>
+          <ComponentWrapper title="Restaurant Food Menu">
+            <ResturantFoodMenu />
+          </ComponentWrapper>
+          <ComponentWrapper title="Restaurant Gallery">
+            <ResturantGallery />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Room Components (Cards & Sections)</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ComponentWrapper title="Room Card One">
+              <RoomCardOne />
+            </ComponentWrapper>
+            <ComponentWrapper title="Room Card Two">
+              <RoomCardTwo />
+            </ComponentWrapper>
+            <ComponentWrapper title="Room Card Three">
+              <RoomCardThree />
+            </ComponentWrapper>
+            <ComponentWrapper title="Room Card Four">
+              <RoomCardFour />
+            </ComponentWrapper>
+            <ComponentWrapper title="Room Card Five">
+              <RoomCardFive />
+            </ComponentWrapper>
+            <ComponentWrapper title="Room Card Six">
+              <RoomCardSix />
+            </ComponentWrapper>
+          </div>
+
+          <ComponentWrapper title="Room One Layout">
+            <RoomOne />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Two Layout">
+            <RoomTwo />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Three Layout">
+            <RoomThree />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Four Layout">
+            <RoomFour />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Five Layout">
+            <RoomFive />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Six Layout">
+            <RoomSix />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Seven Layout">
+            <RoomSeven />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Eight Layout">
+            <RoomEight />
+          </ComponentWrapper>
+          <ComponentWrapper title="Room Nine Layout">
+            <RoomNine />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Form Components</h2>
+          <ComponentWrapper title="Advance Form Two">
+            <FormAdvanceFormTwo />
+          </ComponentWrapper>
+          <ComponentWrapper title="Login Form">
+            <FormLoginForm />
+          </ComponentWrapper>
+          <ComponentWrapper title="Sign Up Form">
+            <FormSignUpForm />
+          </ComponentWrapper>
+          {/* AdvanceForm from Form folder - duplicate name with Home1AdvanceForm? Rename import */}
+          <ComponentWrapper title="Advance Form (Generic)">
+            <FormAdvanceForm />
+          </ComponentWrapper>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-6 border-b pb-2">Other Components</h2>
+          <ComponentWrapper title="Breadcrumb">
+            <Breadcrumb title="Showcase Page" description="A showcase of all components" />
+          </ComponentWrapper>
+          <ComponentWrapper title="Contact Page Component">
+            <Contact />
+          </ComponentWrapper>
+          <ComponentWrapper title="Activities">
+            <Activities />
           </ComponentWrapper>
           <ComponentWrapper title="Gallery Page">
             <Gallery />
           </ComponentWrapper>
           <ComponentWrapper title="Services Page">
             <ServicePageService />
-          </ComponentWrapper>
-          <ComponentWrapper title="Restaurant About">
-            <ResturantAbout />
           </ComponentWrapper>
         </section>
       </div>

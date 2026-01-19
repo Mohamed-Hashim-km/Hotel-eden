@@ -16,6 +16,7 @@ import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from '../home-1/GDPRCookie';
 import RoomEight from '../room/RoomEight';
 import AboutThree from '../home-3/About';
+import BreadcrumbOne from '../breadcrumb/Breadcrumb';
 function page() {
     // useEffect(() => {
     //     document.documentElement.setAttribute("data-theme", "dark");
@@ -46,6 +47,10 @@ function page() {
             <VideoOne />
             <OfferOne /> */}
             <GalleryOne />
+             <BreadcrumbOne
+                title="Our Blog"
+                description="Discover The blog where luxury, comfort, and adventure come together."
+            />
             <FooterOne />
             <BackToTop />
         </>

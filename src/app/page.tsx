@@ -18,6 +18,9 @@ import FooterOne from "./home-1/FooterOne";
 import BackToTop from "./home-1/BackToTop";
 import RoomNine from "./room/RoomNine";
 import Home5Blog from "./home-5/Blog";
+import NewsletterOne from "../app/home-3/Newsletter";
+import HeaderTwo from "../app/home-3/Header";
+
 
 function Page() { // Use PascalCase for Next.js pages
   return (
@@ -29,10 +32,10 @@ function Page() { // Use PascalCase for Next.js pages
           expires: 90, // Cookie expiration in days
         }}
       />
-      <TopBar />
-      <HeaderOne />
+      {/* <TopBar /> */}
+          <HeaderTwo />
       <BannerOne />
-      <AdvanceForm />
+      {/* <AdvanceForm /> */}
       <AboutThree />
       <FacilitiesOne />
       <RoomOne className="pt-120" />
@@ -44,6 +47,7 @@ function Page() { // Use PascalCase for Next.js pages
       {/* <OfferOne /> */}
      
       {/* <AdvanceForm/> */}
+      <NewsletterOne />
       <FooterOne />
       
       <BackToTop />

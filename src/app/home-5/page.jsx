@@ -14,6 +14,7 @@ import FooterFour from './Footer'
 import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
 import NewsletterOne from '../home-3/Newsletter'
+import GalleryOne from '../home-1/GalleryOne'
 
 
 function page() {
@@ -27,7 +28,8 @@ function page() {
         }}
       />
       <HeaderFour />
-      <BannerFive />
+      <GalleryOne />
+      {/* <BannerFive /> */}
       {/* <AdvanceForm /> */}
       {/* <AboutFour /> */}
       {/* <RoomThree posts={posts} /> */}
