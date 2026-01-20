@@ -17,6 +17,7 @@ import GalleryFour from "../resturant/Gallery";
 import TestimonialTwo from "../home-2/Testimonial";
 import NewsletterOne from "../home-3/Newsletter";
 import Home5Blog from "../home-5/Blog";
+
 function page() {
   return (
     <>
@@ -36,7 +37,7 @@ function page() {
 
       <NewsletterOne />
 
-      <Home5Blog />
+      <Home5Blog data={posts} />
 
       {/* <AboutOne />
       <RoomFive posts={posts} />

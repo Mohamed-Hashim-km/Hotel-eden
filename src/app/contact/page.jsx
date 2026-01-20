@@ -1,34 +1,37 @@
-import React from 'react'
-import TopBar from '../home-1/TopBar'
-import HeaderOne from '../home-1/Header'
-import BreadcrumbOne from '../breadcrumb/Breadcrumb'
-import ContactOne from './Contact'
-import FooterOne from '../home-1/FooterOne'
-import BackToTop from '../home-1/BackToTop'
-import GDPRCookie from '../home-1/GDPRCookie'
-import Home5Blog from '../home-5/Blog'
+import React from "react";
+import TopBar from "../home-1/TopBar";
+import HeaderOne from "../home-1/Header";
+import BreadcrumbOne from "../breadcrumb/Breadcrumb";
+import ContactOne from "./Contact";
+import FooterOne from "../home-1/FooterOne";
+import BackToTop from "../home-1/BackToTop";
+import GDPRCookie from "../home-1/GDPRCookie";
+import Home5Blog from "../home-5/Blog";
+import posts from "../data/data-post.json";
+
 function page() {
-    return (
-        <>
-            <GDPRCookie
-                settings={{
-                    title: "Accept Cookies & privacy",
-                    message: "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
-                    expires: 90, // Cookie expiration in days
-                }}
-            />
-            <TopBar />
-            <HeaderOne />
-            {/* <BreadcrumbOne
+  return (
+    <>
+      <GDPRCookie
+        settings={{
+          title: "Accept Cookies & privacy",
+          message:
+            "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
+          expires: 90, // Cookie expiration in days
+        }}
+      />
+      <TopBar />
+      <HeaderOne />
+      {/* <BreadcrumbOne
                 title="Contact Us"
                 description="Whether you have questions, need assistance, or simply want to share."
             /> */}
-            <ContactOne />
-            <Home5Blog/>
-            <FooterOne />
-            <BackToTop />
-        </>
-    )
+      <ContactOne />
+      <Home5Blog data={posts} title="Blog" description="See Our Latest Blog" />
+      <FooterOne />
+      <BackToTop />
+    </>
+  );
 }
 
-export default page
+export default page;

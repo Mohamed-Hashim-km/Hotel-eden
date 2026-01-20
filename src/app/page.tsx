@@ -23,7 +23,7 @@ import RoomNine from "./room/RoomNine";
 import Home5Blog from "./home-5/Blog";
 import NewsletterOne from "../app/home-3/Newsletter";
 import HeaderTwo from "../app/home-3/Header";
-import posts from './data/data-post.json'
+import posts from "./data/data-post.json";
 import faqData from "./data/faq.json";
 
 function Page() {
@@ -57,8 +57,12 @@ function Page() {
         buttonLink="#"
         imageSrc=""
       />
-      <FaqHomeOne faqData={faqData} title="Everything You Need to Know" description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."/>
-      <Home5Blog  data={posts}/>
+      <FaqHomeOne
+        faqData={faqData}
+        title="Everything You Need to Know"
+        description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."
+      />
+      <Home5Blog title="Blog" description="See Our Latest Blog" data={posts} />
       {/* <VideoOne /> */}
       {/* <OfferOne /> */}
 

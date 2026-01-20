@@ -15,6 +15,10 @@ import BackToTop from '../home-1/BackToTop'
 import GDPRCookie from '../home-1/GDPRCookie'
 import NewsletterOne from '../home-3/Newsletter'
 import GalleryOne from '../home-1/GalleryOne'
+import postsData from '../data/data-post.json'
+import HeroFive from './hero-five'
+import HeaderTwo from '../home-3/Header'
+import Amenities from '../home-3/Amenities'
 
 
 function page() {
@@ -27,7 +31,10 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <HeaderFour />
+       <HeaderTwo />
+      <HeroFive />
+      {/* <HeaderFour /> */}
+      <Amenities/>
       <GalleryOne />
       {/* <BannerFive /> */}
       {/* <AdvanceForm /> */}
@@ -39,7 +46,7 @@ function page() {
     
       <TestimonialFive />
         <NewsletterOne />
-      <BlogTwo />
+      <BlogTwo data={posts} />
       {/* <NewsletterTwo /> */}
       <FooterFour />
       <BackToTop />

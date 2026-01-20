@@ -2,6 +2,7 @@ import React from "react";
 import TopBar from "../home-1/TopBar";
 import HeaderOne from "../home-1/Header";
 import BannerSix from "./Banner";
+import HeroSix from "./HeroSix";
 import FacilitiesFive from "./Facilities";
 import AboutFive from "./About";
 import RoomFour from "./Room";
@@ -34,14 +35,15 @@ function page() {
       <TopBar />
       <HeaderOne />
       {/* <BannerSix /> */}
+      <HeroSix />
       <AboutOne />
-       <RoomFive posts={posts} />
+      <RoomFive posts={posts} />
       {/* <ServiceTwo /> */}
       <ActivitiesOne />
       {/* <TestimonialSection className="pb-120" /> */}
       <GalleryOne />
-          <NewsletterOne />
-      <FooterOne/>
+      <NewsletterOne />
+      <FooterOne />
       <BackToTop />
     </>
   );
