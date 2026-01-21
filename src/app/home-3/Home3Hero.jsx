@@ -11,11 +11,11 @@ const Home3Hero = () => {
 
   return (
     <>
-      <div className="rts__section section__padding pt-0">
-        <div className="container">
+      <div className="relative py-[70px] lg:py-[60px] md:py-[50px] pt-0">
+        <div className="container mx-auto px-4">
           {/* Dark Banner Card */}
           <div
-            className="hero-banner-card position-relative radius-20 overflow-visible text-center pt-10 pb-250"
+            className="hero-banner-card relative rounded-[20px] overflow-visible text-center pt-2.5 pb-[250px]"
             style={{
               background: "#6d758f", // Matching the slate/gray color from image roughly
               color: "#fff",
@@ -26,14 +26,17 @@ const Home3Hero = () => {
               justifyContent: "center",
             }}
           >
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <h1 className="title text-white display-4 fw-bold mb-20">Premium Room</h1>
-                <p className="description text-white opacity-75 mb-30 mx-auto" style={{ maxWidth: "600px" }}>
+            <div className="flex flex-wrap justify-center">
+              <div className="w-full lg:w-8/12">
+                <h1 className="text-h1 text-white font-bold mb-5 loading-[90px]">Premium Room</h1>
+                <p className="text-p text-white opacity-75 mb-[30px] mx-auto" style={{ maxWidth: "600px" }}>
                   Designed for guests who value comfort and convenience, the Premium Room at Hotel Eden offers a relaxing space to unwind after a day
                   in the city. Whether you’re here for business or leisure, this room gives you everything you need for a smooth and pleasant stay.
                 </p>
-                <button className="theme-btn mx-auto btn-style sm-btn border d-none d-lg-block bg-white text-dark" onClick={() => setIsSignupOpen(true)}>
+                <button
+                  className="bg-white text-rts-heading py-[14px] px-[30px] rounded-[5px] font-medium tracking-wide uppercase transition-all duration-300 hover:bg-btn-1 hover:text-white hidden lg:block mx-auto"
+                  onClick={() => setIsSignupOpen(true)}
+                >
                   <span>Sign Up</span>
                 </button>
               </div>
@@ -41,11 +44,11 @@ const Home3Hero = () => {
           </div>
 
           {/* Overlapping Image Card */}
-          <div className="row justify-content-center" style={{ marginTop: "-100px", position: "relative", zIndex: 2 }}>
-            <div className="col-lg-10">
-              <div className="bg-white p-3 radius-10 shadow-lg">
+          <div className="flex flex-wrap justify-center relative z-[2]" style={{ marginTop: "-100px" }}>
+            <div className="w-full lg:w-10/12">
+              <div className="bg-white p-3 rounded-[10px] shadow-lg">
                 <div
-                  className="position-relative overflow-hidden radius-10 w-100"
+                  className="relative overflow-hidden rounded-[10px] w-full"
                   style={{
                     minHeight: "450px",
                     backgroundColor: "#f3f4f6",
@@ -68,50 +71,50 @@ const Home3Hero = () => {
           </div>
 
           {/* 3 Column Features Below */}
-          <div className="row g-5 mt-30 justify-content-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[30px] justify-center">
             {/* Feature 1 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div className="wow fadeInUp" data-wow-delay=".3s">
               <div className="text-center">
-                <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
+                <div className="mb-5 inline-flex items-center justify-center text-gray-400">
                   <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <circle cx="8.5" cy="8.5" r="1.5"></circle>
                     <polyline points="21 15 16 10 5 21"></polyline>
                   </svg>
                 </div>
-                <h4 className="title h5 mb-15">Spacious Living</h4>
+                <h4 className="text-h5 mb-[15px]">Spacious Living</h4>
                 <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
                   Ut sit integer fringilla amet quam odio turpis interdum nisi massa est facilisi ultrices mauris eget mi.
                 </p>
               </div>
             </div>
             {/* Feature 2 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+            <div className="wow fadeInUp" data-wow-delay=".4s">
               <div className="text-center">
-                <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
+                <div className="mb-5 inline-flex items-center justify-center text-gray-400">
                   <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <circle cx="8.5" cy="8.5" r="1.5"></circle>
                     <polyline points="21 15 16 10 5 21"></polyline>
                   </svg>
                 </div>
-                <h4 className="title h5 mb-15">Modern Amenities</h4>
+                <h4 className="text-h5 mb-[15px]">Modern Amenities</h4>
                 <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
                   Et imperdiet vitae diam ac eget non velit turpis viverra justo col integer feugiat viverra tellus.
                 </p>
               </div>
             </div>
             {/* Feature 3 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div className="wow fadeInUp" data-wow-delay=".5s">
               <div className="text-center">
-                <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
+                <div className="mb-5 inline-flex items-center justify-center text-gray-400">
                   <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <circle cx="8.5" cy="8.5" r="1.5"></circle>
                     <polyline points="21 15 16 10 5 21"></polyline>
                   </svg>
                 </div>
-                <h4 className="title h5 mb-15">Custom Services</h4>
+                <h4 className="text-h5 mb-[15px]">Custom Services</h4>
                 <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
                   Vel quis viverra maecenas tortor sapien et vitae neque porta enim risus augue ut id aliquam susci.
                 </p>

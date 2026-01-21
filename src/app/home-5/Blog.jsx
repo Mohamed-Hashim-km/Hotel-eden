@@ -12,30 +12,30 @@ function BlogTwo({ data, title, description }) {
   return (
     <>
       {/* blog style */}
-      <div className="rts__section blog is__home__three section__padding">
-        <div className="container">
-          <div className="row justify-content-center text-center mb-40">
-            <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="section__topbar">
-              { title && <span className="h6 subtitle__icon__three mx-auto">{title}</span>}
-               { description && <p className="section__title">{description}</p>}
+      <div className="relative py-[70px] lg:py-[60px] md:py-[50px]">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center text-center mb-10">
+            <div className="w-full lg:w-1/2 wow fadeInUp" data-wow-delay=".3s">
+              <div className="mb-5">
+                {title && <span className="text-h6 text-rts-heading block mb-[10px] relative inline-block">{title}</span>}
+                {description && <p className="text-h2 font-gilda text-rts-heading">{description}</p>}
               </div>
             </div>
           </div>
           {/* row end */}
-          <div className="row g-30">
-            {(data || posts).map((data, index) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px]">
+            {(data || posts).map((post, index) => {
               return (
-                <div key={index} className="col-lg-6 col-xl-4 col-md-6">
+                <div key={index} className="w-full">
                   {
                     <PostThree
-                      Slug={data.slug}
-                      Title={data.title}
-                      Img={data.image}
-                      Category={data.category}
-                      AuthorImg={data.authorImg}
-                      Author={data.author}
-                      Description={data.description}
+                      Slug={post.slug}
+                      Title={post.title}
+                      Img={post.image}
+                      Category={post.category}
+                      AuthorImg={post.authorImg}
+                      Author={post.author}
+                      Description={post.description}
                     />
                   }
                 </div>
