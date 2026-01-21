@@ -39,7 +39,7 @@ function Page() {
         }}
       />
       {/* <TopBar /> */}
-      <HeaderTwo />
+      <HeaderOne />
       <BannerOne />
       {/* <AdvanceForm /> */}
       <AboutThree />
@@ -62,7 +62,7 @@ function Page() {
         title="Everything You Need to Know"
         description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."
       />
-      <Home5Blog title="Blog" description="See Our Latest Blog" data={posts} />
+      <Home5Blog title="Offering Carousel" description="" data={posts} />
       {/* <VideoOne /> */}
       {/* <OfferOne /> */}
 

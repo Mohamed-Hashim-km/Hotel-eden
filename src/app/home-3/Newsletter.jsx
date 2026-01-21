@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function NewsletterOne() {
@@ -8,19 +9,10 @@ function NewsletterOne() {
                 <div className="container">
                     <div className="row">
                         <div className="footer__newsletter is__separate wow fadeInUp">
-                            <span className="h2 mb-0">Your perfect stay in Karwar is just a moment away.</span>
-                            <div className="rts__form">
-                                <form action="#" method="post">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="subscription"
-                                        placeholder="Enter your mail"
-                                        required=""
-                                    />
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                            </div>
+                            <span className="h4 mb-0">Your perfect stay in Karwar is <br className=''/> just a moment away.</span>
+                              <Link href="/room/the-ritz-carlton" className="theme-btn btn-style sm-btn fill">
+                                    <span>Book Now</span>
+                                </Link>
                         </div>
                     </div>
                 </div>

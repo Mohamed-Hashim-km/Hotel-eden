@@ -33,13 +33,13 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <HeaderTwo />
+      <HeaderOne />
       <BannerTwo />
 
- <Home5Blog data={posts}/>
+      <Home5Blog data={posts} />
       <CommonAmenities />
-       <FaqHomeOne faqData={faqData} />
-            
+      <FaqHomeOne faqData={faqData} />
+
       <NewsletterOne />
       {/* <AboutTwo /> */}
       {/* <FacilitiesTwo />

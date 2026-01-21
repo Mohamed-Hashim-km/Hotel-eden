@@ -85,9 +85,12 @@ const CommonAmenities = () => {
               <Link href="#" className="theme-btn btn-style fill no-border">
                 <span>Get started</span>
               </Link>
-              <Link href="#" className="theme-btn btn-style fill no-border">
-                <span>Learn more</span>
-              </Link>
+             <button
+                                    className="theme-btn btn-style sm-btn border d-none d-lg-block"
+                                    onClick={() => setIsSignupOpen(true)}
+                                >
+                                    <span>Sign Up</span>
+                                </button>
             </div>
           </div>
         </div>

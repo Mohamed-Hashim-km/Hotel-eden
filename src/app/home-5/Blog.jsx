@@ -12,13 +12,13 @@ function BlogTwo({ data, title, description }) {
   return (
     <>
       {/* blog style */}
-      <div className="rts__section blog is__home__three">
+      <div className="rts__section blog is__home__three section__padding">
         <div className="container">
           <div className="row justify-content-center text-center mb-40">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="section__topbar">
-                <span className="h6 subtitle__icon__three mx-auto">{title || "Blog"}</span>
-                <p className="section__title">{description || "See Our Latest Blog"}</p>
+              { title && <span className="h6 subtitle__icon__three mx-auto">{title}</span>}
+               { description && <p className="section__title">{description}</p>}
               </div>
             </div>
           </div>

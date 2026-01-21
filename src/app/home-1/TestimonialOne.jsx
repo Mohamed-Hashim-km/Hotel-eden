@@ -63,18 +63,16 @@ function TestimonialOne() {
                                                         <i className="flaticon-star" />
                                                         <i className="flaticon-star" />
                                                         <i className="flaticon-star" />
-                                                        <i className="flaticon-star-sharp-half-stroke" />
+                                                        <i className="flaticon-star" />
                                                     </div>
                                                     <span className="slider__text d-block">
-                                                        Choosing Bokinn was one of the best decisions we've ever
-                                                        made. They have proven to be a reliable and innovative
-                                                        partner, always ready to tackle new challenges with and
-                                                        expertise.Their commitment to and delivering tailored.
+                                                         I stayed for 2 nights at Hotel Eden, Karwar, and had an amazing experience. The rooms are spacious and very clean, with useful facilities like a small refrigerator, locker, study table and a comfortable sofa set. The service was always quick and responsive, which made the stay even more comfortable. The in-house restaurant served delicious complimentary breakfast with good variety. We also had our lunch and dinner there on both days, and every dish was truly finger-licking and fresh. Overall, I am very happy with my stay and would highly recommend Hotel Eden, Karwar, to anyone visiting the city.
+
                                                     </span>
                                                     <div className="slider__author__info">
                                                         <div className="slider__author__info__content">
-                                                            <h6 className="mb-0">Sarah Martinez</h6>
-                                                            <span>COO of Apex Solutions</span>
+                                                            <h6 className="mb-0">Singh</h6>
+                                                            {/* <span>COO of Apex Solutions</span> */}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -93,18 +91,43 @@ function TestimonialOne() {
                                                         <i className="flaticon-star" />
                                                         <i className="flaticon-star" />
                                                         <i className="flaticon-star" />
-                                                        <i className="flaticon-star-sharp-half-stroke" />
+                                                        <i className="flaticon-star" />
                                                     </div>
                                                     <span className="slider__text d-block">
-                                                        Choosing Bokinn was one of the best decisions we've ever
-                                                        made. They have proven to be a reliable and innovative
-                                                        partner, always ready to tackle new challenges with and
-                                                        expertise.Their commitment to and delivering tailored.
+                                                       I stayed at Eden Hotel about a month ago, and it was a great experience. The staff were very polite and made my stay even more comfortable. The service was excellent, the rooms were clean, and the overall atmosphere was welcoming. I really appreciated the warm hospitality and professional attitude of the team.
                                                     </span>
                                                     <div className="slider__author__info">
                                                         <div className="slider__author__info__content">
-                                                            <h6 className="mb-0">Sarah Martinez</h6>
-                                                            <span>COO of Apex Solutions</span>
+                                                            <h6 className="mb-0">Aayaz vk</h6>
+                                                            {/* <span>COO of Apex Solutions</span> */}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                      <SwiperSlide>
+                                        <div className="testimonial__item__content">
+                                            <div className="author__icon">
+                                                <img src="/assets/images/author/author-4.webp" alt="" />
+                                            </div>
+                                            <div className="testimonial__content">
+                                                <div className="single__slider__item ">
+                                                    <div className="slider__rating mb-20">
+                                                        <i className="flaticon-star" />
+                                                        <i className="flaticon-star" />
+                                                        <i className="flaticon-star" />
+                                                        <i className="flaticon-star" />
+                                                        <i className="flaticon-star" />
+                                                    </div>
+                                                    <span className="slider__text d-block">
+                                                    I returned here for a long stay of 5 days after about a year. Hotel Eden has exceeded expectations on all fronts. The Club room is still clean, spacious and well-maintained. Housekeeping is available 24x7 and does a great job, which is exceptional for a hotel of this tier and price. The staff really makes the place a good stay, and their talent rivals some of the best hotels. The restaurant Tulip has improved greatly in taste. Overall an excellent place to stay for business and events in the area.
+
+                                                    </span>
+                                                    <div className="slider__author__info">
+                                                        <div className="slider__author__info__content">
+                                                            <h6 className="mb-0">Narayan kamath</h6>
+                                                            {/* <span>COO of Apex Solutions</span> */}
                                                         </div>
                                                     </div>
                                                 </div>

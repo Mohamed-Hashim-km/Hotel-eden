@@ -19,6 +19,7 @@ import GalleryOne from "../home-1/GalleryOne";
 import Home5Blog from "../home-5/Blog";
 import FooterOne from "../home-1/FooterOne";
 import faqData from "../data/faq.json";
+import HeaderOne from "../home-1/Header";
 
 function page() {
   return (
@@ -31,7 +32,7 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <HeaderTwo />
+      <HeaderOne />
       {/* <BannerThree /> */}
       <Home3Hero />
       {/* <AdvanceForm /> */}

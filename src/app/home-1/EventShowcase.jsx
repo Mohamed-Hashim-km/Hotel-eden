@@ -5,13 +5,13 @@ import Link from "next/link";
 const EventShowcase = ({ title, description, buttonText, buttonLink, imageSrc }) => {
   return (
     <div className="rts__section section__padding">
-      <div className="">
+      <div className="container-fluid ps-0 pe-3 pe-md-5">
         <div className="row align-items-center g-5">
           {/* Left Side: Image */}
           <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
             <div
               className="event-showcase-image position-relative overflow-hidden radius-10"
-              style={{ minHeight: "400px", backgroundColor: "#f8f9fa", display: "flex", alignItems: "center", justifyContent: "center" }}
+              style={{ minHeight: "600px", backgroundColor: "#f8f9fa", display: "flex", alignItems: "center", justifyContent: "center" }}
             >
               {imageSrc ? (
                 <img src={imageSrc} alt={title} className="img-fluid w-100 h-100 object-fit-cover" />

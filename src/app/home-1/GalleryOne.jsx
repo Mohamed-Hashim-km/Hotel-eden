@@ -1,17 +1,17 @@
-'use client'
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css'; // Core Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-import Modal from './Modal';
-import Link from 'next/link';
+"use client";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css"; // Core Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import Modal from "./Modal";
+import Link from "next/link";
 // import Modal from './Modal'; // Import the Modal component
 
 function GalleryOne() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImage, setModalImage] = useState('');
+  const [modalImage, setModalImage] = useState("");
 
   // Function to open the modal with the selected image
   const openModal = (imageSrc) => {
@@ -27,7 +27,7 @@ function GalleryOne() {
   return (
     <>
       {/* gallery */}
-      <div className="rts__section is__home__main">
+      <div className="rts__section is__home__main section__padding">
         <div className="container-fluid">
           <div className="row position-relative justify-content-center text-center mb-30">
             <div className="col-lg-6 wow fadeInUp">
@@ -35,20 +35,14 @@ function GalleryOne() {
                 {/* <span className="h6 subtitle__icon__three mx-auto">
                   Instagram Post
                 </span> */}
-                <h2 className="section__title">A Culinary Experience for Every Mood
-</h2>
+                <h2 className="section__title">A Culinary Experience for Every Mood</h2>
                 <p className="section__subtitle">
-                 From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof.
-
+                  From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining
+                  destinations under one roof.
                 </p>
-              <Link
-                                    href="#"
-                                    className="theme-btn btn-style fill no-border wow fadeInUp"
-                                    data-wow-delay=".5s"
-                                >
-                                    <span>Explore All Restaurants
-</span>
-                                </Link>
+                <Link href="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
+                  <span>Explore All Restaurants</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -83,19 +77,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/1.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/1.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/1.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/1.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -108,19 +97,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/2.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/2.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/2.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/2.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -133,19 +117,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/3.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/3.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/3.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/3.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -158,19 +137,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/4.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/4.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/4.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/4.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -183,19 +157,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/5.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/5.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/5.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/5.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -208,19 +177,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/6.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/6.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/6.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/6.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>
@@ -233,19 +197,14 @@ function GalleryOne() {
                     height={300}
                     width={300}
                     alt=""
-                    onClick={() => openModal('assets/images/insta/3.webp')} // Open modal on image click
+                    onClick={() => openModal("assets/images/insta/3.webp")} // Open modal on image click
                   />
                   <a
                     href="#0"
                     className="gallery__popup"
-                    onClick={() => openModal('assets/images/insta/3.webp')} // Open modal on anchor click
+                    onClick={() => openModal("assets/images/insta/3.webp")} // Open modal on anchor click
                   >
-                    <img
-                      src="/assets/images/icon/instagram.svg"
-                      height={40}
-                      width={40}
-                      alt=""
-                    />
+                    <img src="/assets/images/icon/instagram.svg" height={40} width={40} alt="" />
                   </a>
                 </div>
               </SwiperSlide>

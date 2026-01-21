@@ -17,7 +17,7 @@ import NewsletterOne from '../home-3/Newsletter'
 import GalleryOne from '../home-1/GalleryOne'
 import postsData from '../data/data-post.json'
 import HeroFive from './hero-five'
-import HeaderTwo from '../home-3/Header'
+import HeaderOne from '../home-1/Header'
 import Amenities from '../home-3/Amenities'
 
 
@@ -31,7 +31,7 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-       <HeaderTwo />
+     <HeaderOne />
       <HeroFive />
       {/* <HeaderFour /> */}
       <Amenities/>
