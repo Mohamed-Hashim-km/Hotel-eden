@@ -20,6 +20,9 @@ import Home5Blog from "../home-5/Blog";
 import FooterOne from "../home-1/FooterOne";
 import faqData from "../data/faq.json";
 import HeaderOne from "../home-1/Header";
+import TestimonialOne from "../home-1/TestimonialOne";
+
+import testimonialData from "../data/room-type-testimonials.json";
 
 function page() {
   return (
@@ -37,11 +40,12 @@ function page() {
       <Home3Hero />
       {/* <AdvanceForm /> */}
       {/* <AboutThree /> */}
-      <GalleryOne />
       <Amenities />
+      <GalleryOne />
+
       {/* <FacilitiesTwo /> */}
       {/* <RoomTwo posts={posts} /> */}
-      <TestimonialTwo />
+      <TestimonialOne testimonials={testimonialData} />
       {/* <VideoThree /> */}
       <NewsletterOne />
       {/* <OfferThree /> */}

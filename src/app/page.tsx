@@ -25,6 +25,7 @@ import NewsletterOne from "../app/home-3/Newsletter";
 import HeaderTwo from "../app/home-3/Header";
 import posts from "./data/data-post.json";
 import faqData from "./data/faq.json";
+import testimonialData from "./data/testimonial-one.json";
 
 function Page() {
   // Use PascalCase for Next.js pages
@@ -48,7 +49,7 @@ function Page() {
       <RoomOne className="" />
 
       <GalleryOne />
-      <TestimonialOne />
+      <TestimonialOne title="What Our Guests Love About Us" description="From authentic guest experiences and cherished memories, discover why Hotel Eden is the perfect choice for your stay." textSize="" testimonials={testimonialData} />
 
       <EventShowcase
         title="Signature Spaces For Every Occasion"
@@ -62,7 +63,7 @@ function Page() {
         title="Everything You Need to Know"
         description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."
       />
-      <Home5Blog title="Offering Carousel" description="" data={posts} />
+      <Home5Blog title="Offering Carousel" description=""  data={posts} />
       {/* <VideoOne /> */}
       {/* <OfferOne /> */}
 

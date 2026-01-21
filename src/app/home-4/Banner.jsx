@@ -8,7 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import Link from 'next/link';
-function BannerFour() {
+
+function BannerTwo() {
     return (
         <>
             {/* banner area */}
@@ -16,38 +17,38 @@ function BannerFour() {
                 
                     <div className="swiper-wrapper">
                         {/* single slider item */}
-                      
+                     
                             <div className="banner__slider__image">
-                                <img src="/assets/images/banner/1.webp" alt="" />
+                                <img src="/assets/images/banner/4.webp" alt="" />
                             </div>
                             <div className="container">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-10">
                                         <div className="banner__slide__content">
                                             {/* <span className="h6 subtitle__icon">
-                                                A Boutique Stay Designed For You
+                                                Welcome to Our Hotel
                                             </span> */}
-                                            <h1> Experience the Best of Gokarna</h1>
+                                            <h1>Experience the Best of Gokarna</h1>
                                             <p className="sub__text">
                                               Blessed with serene beaches, sacred temples and scenic coastal landscapes, Gokarna is a peaceful seaside town where spirituality and nature come together perfect for a refreshing getaway.
 
                                             </p>
-                                            {/* <Link
-                                                href="/room-two"
+                                            <Link
+                                                href="/room-three"
                                                 className="theme-btn btn-style fill no-border "
                                             >
                                                 <span>Book Now</span>
-                                            </Link> */}
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        
+                     
                         {/* single slider item end */}
                         {/* single slider item */}
                         {/* <SwiperSlide>
                             <div className="banner__slider__image">
-                                <img src="/assets/images/banner/2.webp" alt="" />
+                                <img src="assets/images/banner/slides-1.webp" alt="" />
                             </div>
                             <div className="container">
                                 <div className="row justify-content-center">
@@ -61,35 +62,7 @@ function BannerFour() {
                                                 partner
                                             </p>
                                             <Link
-                                                href="/room-one"
-                                                className="theme-btn btn-style fill no-border "
-                                            >
-                                                <span>Discover Room</span>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide> */}
-                        {/* single slider item end */}
-                        {/* single slider item */}
-                        {/* <SwiperSlide>
-                            <div className="banner__slider__image">
-                                <img src="/assets/images/banner/banner-3.webp" alt="" />
-                            </div>
-                            <div className="container">
-                                <div className="row justify-content-center">
-                                    <div className="col-lg-10">
-                                        <div className="banner__slide__content">
-                                            <span className="h6 subtitle__icon">Welcome to Our Spa</span>
-                                            <h1> A Perfect Fusion of Comfort and Elegance</h1>
-                                            <p className="sub__text">
-                                                Choosing Bokinn was one of the best decisions we've ever
-                                                made. They have proven to be a reliable and innovative
-                                                partner
-                                            </p>
-                                            <Link
-                                                href="/room-one"
+                                                href="/room-four"
                                                 className="theme-btn btn-style fill no-border "
                                             >
                                                 <span>Discover Room</span>
@@ -143,7 +116,7 @@ function BannerFour() {
                             </div>
                         </div>
                     </div>
-               
+            
             </div>
             {/* banner area end */}
         </>
@@ -151,4 +124,4 @@ function BannerFour() {
     )
 }
 
-export default BannerFour
+export default BannerTwo

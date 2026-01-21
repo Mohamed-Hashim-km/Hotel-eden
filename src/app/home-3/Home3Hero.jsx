@@ -11,7 +11,7 @@ const Home3Hero = () => {
 
   return (
     <>
-      <div className="rts__section section__padding pt-0">
+      <div className="rts__section section__padding pt-200">
         <div className="container">
           {/* Dark Banner Card */}
           <div
@@ -20,10 +20,10 @@ const Home3Hero = () => {
               background: "#6d758f", // Matching the slate/gray color from image roughly
               color: "#fff",
               borderRadius: "20px",
-              minHeight: "70vh",
+              minHeight: "90vh",
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
+             paddingTop:"70px"
             }}
           >
             <div className="row justify-content-center">
@@ -41,9 +41,9 @@ const Home3Hero = () => {
           </div>
 
           {/* Overlapping Image Card */}
-          <div className="row justify-content-center" style={{ marginTop: "-100px", position: "relative", zIndex: 2 }}>
+          <div className="row justify-content-center" style={{ marginTop: "-200px", position: "relative", zIndex: 2 }}>
             <div className="col-lg-10">
-              <div className="bg-white p-3 radius-10 shadow-lg">
+              <div className="bg-white  radius-10 ">
                 <div
                   className="position-relative overflow-hidden radius-10 w-100"
                   style={{

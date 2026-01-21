@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // Core Swiper styles
 import { Navigation } from 'swiper/modules';
@@ -10,6 +10,7 @@ import 'swiper/css/scrollbar';
 import Link from 'next/link';
 
 function BannerTwo() {
+    const [isSignupOpen, setIsSignupOpen] = useState(false);
     return (
         <>
             {/* banner area */}
@@ -33,12 +34,17 @@ function BannerTwo() {
                                                Surrounded by pristine beaches, rivers and scenic landscapes, Karwar is a beautiful coastal town known for its calm atmosphere and natural beauty. From quiet waterfronts to local culture and cuisine, Karwar offers the perfect setting for a relaxed getaway.
 
                                             </p>
-                                            <Link
-                                                href="/room-three"
-                                                className="theme-btn btn-style fill no-border "
-                                            >
-                                                <span>Book Now</span>
-                                            </Link>
+                                            <div className="d-flex justify-content-center  gap-4 ">
+                    <button href="/room-two" className="theme-btn btn-style fill no-border ">
+                      <span>Book Now</span>
+                    </button>
+                    <button
+                      className="theme-btn  btn-style sm-btn border d-none d-lg-block bg-white text-dark"
+                      onClick={() => setIsSignupOpen(true)}
+                    >
+                      <span>Sign Up</span>
+                    </button>
+                  </div>
                                         </div>
                                     </div>
                                 </div>

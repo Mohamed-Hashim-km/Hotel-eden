@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "author": "Ravindra Tayalur",
+    "designation": "",
+    "review": "Because all the facilities were excellent. I stayed for two days in Hotel Eden. The property is new and has just completed 5 months. The rooms are big and with modern amenities. The staff at the front desk were polite and helpful. The house keeping was good. The breakfast served was especially nice. Overall a great stay within the budget. I would like to stay there again.",
+    "img": "/assets/images/author/author-2x.webp",
+    "rating": 5,
+    "date": "2 years ago"
+  },
+  {
+    "id": 2,
+    "author": "Natalie Harper",
+    "designation": "",
+    "review": "This was one of the nicest hotels I've stayed in during my travelling around India for 5 months - and I'm travelling on a budget. It is like a 5 Star hotel but at such a great price!. Also the staff are AMAZING!!! I arrived late and was hungry and after a bad day wanted a beer. The bar wasn't open yet so one of the staff went out to get me a beer and even though the kitchen was closed they made a great sandwich with French fries. The restaurant is also great for full meals - lovely tandoori paneer! Thank you all for great hospitality and great service!",
+    "img": "/assets/images/author/author-4.webp",
+    "rating": 5,
+    "date": "2 years ago"
+  },
+  {
+    "id": 3,
+    "author": "Umang Malhotra",
+    "designation": "",
+    "review": "I loved my stay of 1 Night at Hotel Eden Karvar. Their rooms are big and spacious. The morning breakfast buffet is wide and has a good spread. Service by staff members is also amazing. Room bathrooms are very cozy and rooms are spacious, comfortable. Above all, room prices are affordable.",
+    "img": "/assets/images/author/author-4.webp",
+    "rating": 5,
+    "date": "2 years ago"
+  }
+]
