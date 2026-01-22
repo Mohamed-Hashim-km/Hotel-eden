@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body style={{overflowX: "hidden"}}>
         {children}
         <Script src="/assets/js/smoothscroll.js" strategy="afterInteractive"/>
       </body>

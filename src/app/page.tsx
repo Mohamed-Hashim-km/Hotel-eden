@@ -31,6 +31,7 @@ function Page() {
   // Use PascalCase for Next.js pages
   return (
     <>
+    <div style={{overflow:"hidden"}}>
       <GDPRCookie
         settings={{
           title: "Accept Cookies & privacy",
@@ -72,6 +73,8 @@ function Page() {
       <FooterOne />
 
       <BackToTop />
+      
+    </div>
     </>
   );
 }
