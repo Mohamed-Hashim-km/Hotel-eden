@@ -1,23 +1,14 @@
 import React from "react";
-import TopBar from "../home-1/TopBar";
 import HeaderOne from "../home-1/Header";
 import BannerTwo from "./Banner";
-import AdvanceForm from "../home-1/AdvanceForm";
-import AboutTwo from "./About";
-import FacilitiesTwo from "./Facilities";
-import RoomTwo from "./Room";
+
 import posts from "../data/location.json";
-import TestimonialTwo from "./Testimonial";
-import VideoTwo from "./Video";
-import OfferTwo from "./Offer";
-import GalleryTwo from "./Gallery";
+
 import FooterOne from "../home-1/FooterOne";
-import BackToTop from "../home-1/BackToTop";
 import GDPRCookie from "../home-1/GDPRCookie";
 import Home5Blog from "../home-5/Blog";
-import RoomSix from "../room/RoomSix";
-import NewsletterOne from "../home-3/Newsletter";
-import HeaderTwo from "../home-3/Header";
+
+import NewsletterOne from "../rooms/premium-room/Newsletter";
 import CommonAmenities from "./CommonAmenities";
 import FaqHomeOne from "../home-1/FaqHomeOne";
 import faqData from "../data/locationFaq.json";

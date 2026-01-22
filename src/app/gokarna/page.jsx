@@ -5,11 +5,11 @@ import Home5Blog from "../home-5/Blog";
 
 import FaqHomeOne from "../home-1/FaqHomeOne";
 import faqData from "../data/faqGokarana.json";
-import NewsletterOne from "../home-3/Newsletter";
+import NewsletterOne from "../rooms/premium-room/Newsletter";
 import FooterOne from "../home-1/FooterOne";
 import posts from "../data/gokarna.json";
-import CommonAmenities from "../home-2/CommonAmenities";
-import BannerTwo from "../home-2/Banner";
+import CommonAmenities from "../location/CommonAmenities";
+
 import BannerFour from "./Banner";
 
 // goakarna page

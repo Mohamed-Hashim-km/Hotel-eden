@@ -25,12 +25,12 @@ const CommonAmenities = ({
         <div className="row justify-content-center text-center mb-50">
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".3s">
             <div className="section__topbar">
-              <span className="h6 subtitle__icon__three mx-auto">{title}</span>
+             {title && <span className="h6 subtitle__icon__three mx-auto">{title}</span>}
               {subtitle && <h2 className="section__title mb-30">{subtitle}</h2>}
             </div>
             {description && <p className="description ">{description}</p>}
           </div>
-           <div className="d-flex justify-content-center mt-30 gap-3">
+           {/* <div className="d-flex justify-content-center mt-30 gap-3">
               <button href="#" className="theme-btn btn-style fill no-border">
                 <span>Get started</span>
               </button>
@@ -40,7 +40,7 @@ const CommonAmenities = ({
                                 >
                                     <span>Sign Up</span>
                                 </button>
-            </div>
+            </div> */}
         </div>
 
         {/* Feature List */}

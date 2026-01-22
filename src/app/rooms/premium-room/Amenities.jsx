@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import faqData from "../data/faq.json";
+import faqData from "../../data/faq.json";
 
 const Amenities = () => {
   const [activeId, setActiveId] = useState(1);

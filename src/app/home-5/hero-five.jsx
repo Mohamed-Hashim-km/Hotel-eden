@@ -1,122 +1,138 @@
 "use client";
-
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css"; // Core Swiper styles
+import { Navigation } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
-
-const HeroFive = () => {
+function BannerOne({title, description}) {
   return (
-    <div className="rts__section section__padding pt-0">
-      <div className="container">
-        {/* Dark Banner Card */}
-        <div
-          className="hero-banner-card position-relative radius-20 overflow-visible text-center pt-10 pb-250"
-          style={{
-            background: "#6d758f", // Matching the slate/gray color from image roughly
-            color: "#fff",
-            borderRadius: "20px",
-            minHeight: "70vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <h1 className="title text-white display-4 fw-bold mb-20">10‑Bed Dormitory</h1>
-              <p className="description text-white opacity-75 mb-30 mx-auto" style={{ maxWidth: "600px" }}>
-Spacious and thoughtfully designed, this dormitory offers a comfortable shared stay for groups, complete with modern amenities and privacy-focused facilities.
+    <>
+      {/* banner area */}
+      <div className="rts__section banner__area is__home__one banner__height banner__center">
+        <div className="swiper-wrapper">
+          {/* single slider item */}
 
-              </p>
-              <Link href="#" className="btn btn-light rounded-2 px-4 py-2 d-inline-flex align-items-center gap-2 text-dark font-weight-bold">
-                <span>Book Your Stay Now
-</span> <FaArrowRight />
-              </Link>
-            </div>
+          <div className="banner__slider__image">
+            <img src="/assets/images/banner/1.webp" alt="" />
           </div>
-        </div>
-
-        {/* Overlapping Image Card */}
-        <div className="row justify-content-center" style={{ marginTop: "-100px", position: "relative", zIndex: 2 }}>
-          <div className="col-lg-10">
-            <div className="bg-white p-3 radius-10 shadow-lg">
-              <div
-                className="position-relative overflow-hidden radius-10 w-100"
-                style={{
-                  minHeight: "450px",
-                  backgroundColor: "#f3f4f6",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {/* Placeholder for big image */}
-                <div className="opacity-25 text-center">
-                  <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#5d6d8c" strokeWidth="1">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                    <polyline points="21 15 16 10 5 21"></polyline>
-                  </svg>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-10">
+                <div className="banner__slide__content">
+                  {/* <span className="h6 subtitle__icon">
+                                                A Boutique Stay Designed For You
+                                            </span> */}
+                  <h1>{title}</h1>
+                  <p className="sub__text">{description}</p>
+                  <div className="d-flex justify-content-center  gap-4 ">
+                    <button href="/room-two" className="theme-btn btn-style fill no-border ">
+                      <span>Book Now</span>
+                    </button>
+                    <button className="theme-btn  btn-style sm-btn border d-none d-lg-block bg-white text-dark" onClick={() => setIsSignupOpen(true)}>
+                      <span>Sign Up</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* 3 Column Features Below */}
-        <div className="row g-5 mt-30 justify-content-center">
-          {/* Feature 1 */}
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-            <div className="text-center">
-              <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                  <polyline points="21 15 16 10 5 21"></polyline>
-                </svg>
-              </div>
-              <h4 className="title h5 mb-15">Spacious Living</h4>
-              <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
-                Ut sit integer fringilla amet quam odio turpis interdum nisi massa est facilisi ultrices mauris eget mi.
-              </p>
+          {/* single slider item end */}
+          {/* single slider item */}
+          {/* <SwiperSlide>
+                            <div className="banner__slider__image">
+                                <img src="/assets/images/banner/2.webp" alt="" />
+                            </div>
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-10">
+                                        <div className="banner__slide__content">
+                                            <span className="h6 subtitle__icon">Welcome to Our Spa</span>
+                                            <h1>Lavish Getaway A Blend of Comfort &amp; Style</h1>
+                                            <p className="sub__text">
+                                                Choosing Bokinn was one of the best decisions we've ever
+                                                made. They have proven to be a reliable and innovative
+                                                partner
+                                            </p>
+                                            <Link
+                                                href="/room-one"
+                                                className="theme-btn btn-style fill no-border "
+                                            >
+                                                <span>Discover Room</span>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide> */}
+          {/* single slider item end */}
+          {/* single slider item */}
+          {/* <SwiperSlide>
+                            <div className="banner__slider__image">
+                                <img src="/assets/images/banner/banner-3.webp" alt="" />
+                            </div>
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-10">
+                                        <div className="banner__slide__content">
+                                            <span className="h6 subtitle__icon">Welcome to Our Spa</span>
+                                            <h1> A Perfect Fusion of Comfort and Elegance</h1>
+                                            <p className="sub__text">
+                                                Choosing Bokinn was one of the best decisions we've ever
+                                                made. They have proven to be a reliable and innovative
+                                                partner
+                                            </p>
+                                            <Link
+                                                href="/room-one"
+                                                className="theme-btn btn-style fill no-border "
+                                            >
+                                                <span>Discover Room</span>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide> */}
+          {/* single slider item end */}
+        </div>
+        <div className="rts__slider__nav">
+          <div className="rts__slide">
+            <div className="next" role="button">
+              <svg width={40} height={22} viewBox="0 0 40 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.255 9.75546H39.0404C39.7331 9.75546 40.2927 10.3151 40.2927 11.0078C40.2927 11.7005 39.7331 12.2601 39.0404 12.2601H4.28018L11.8803 19.8603C12.3695 20.3495 12.3695 21.1439 11.8803 21.6331C11.3911 22.1223 10.5967 22.1223 10.1075 21.6331L0.366619 11.8923C0.00657272 11.5322 -0.0990982 10.9961 0.0965805 10.5264C0.292259 10.0607 0.750149 9.75546 1.255 9.75546Z"
+                  fill="#F1F1F1"
+                />
+                <path
+                  d="M11.0077 0.00274277C11.3286 0.00274277 11.6495 0.124063 11.8921 0.370618C12.3813 0.859813 12.3813 1.65426 11.8921 2.14346L2.13955 11.896C1.65036 12.3852 0.855906 12.3852 0.366712 11.896C-0.122483 11.4068 -0.122483 10.6124 0.366712 10.1232L10.1193 0.370618C10.3658 0.124063 10.6868 0.00274277 11.0077 0.00274277Z"
+                  fill="#F1F1F1"
+                />
+              </svg>
             </div>
           </div>
-          {/* Feature 2 */}
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-            <div className="text-center">
-              <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                  <polyline points="21 15 16 10 5 21"></polyline>
-                </svg>
-              </div>
-              <h4 className="title h5 mb-15">Modern Amenities</h4>
-              <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
-                Et imperdiet vitae diam ac eget non velit turpis viverra justo col integer feugiat viverra tellus.
-              </p>
-            </div>
-          </div>
-          {/* Feature 3 */}
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-            <div className="text-center">
-              <div className="icon mb-20 d-inline-flex align-items-center justify-content-center text-muted">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                  <polyline points="21 15 16 10 5 21"></polyline>
-                </svg>
-              </div>
-              <h4 className="title h5 mb-15">Custom Services</h4>
-              <p className="description font-sm text-center mx-auto" style={{ maxWidth: "300px" }}>
-                Vel quis viverra maecenas tortor sapien et vitae neque porta enim risus augue ut id aliquam susci.
-              </p>
+          <div className="rts__slide">
+            <div className="prev" role="button">
+              <svg width={40} height={22} viewBox="0 0 40 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M39.0377 12.2445L1.25234 12.2445C0.559636 12.2445 -2.04305e-06 11.6849 -1.92194e-06 10.9922C-1.80082e-06 10.2995 0.559637 9.73987 1.25234 9.73987L36.0125 9.73987L28.4124 2.13974C27.9232 1.65055 27.9232 0.856096 28.4124 0.366901C28.9016 -0.122294 29.6961 -0.122293 30.1853 0.366901L39.9261 10.1077C40.2861 10.4678 40.3918 11.004 40.1961 11.4736C40.0005 11.9393 39.5426 12.2445 39.0377 12.2445Z"
+                  fill="#F1F1F1"
+                />
+                <path
+                  d="M29.2852 21.9973C28.9643 21.9973 28.6433 21.8759 28.4007 21.6294C27.9115 21.1402 27.9115 20.3457 28.4007 19.8565L38.1533 10.104C38.6425 9.61476 39.4369 9.61476 39.9261 10.104C40.4153 10.5932 40.4153 11.3876 39.9261 11.8768L30.1736 21.6294C29.927 21.8759 29.6061 21.9973 29.2852 21.9973Z"
+                  fill="#F1F1F1"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      {/* banner area end */}
+    </>
   );
-};
+}
 
-export default HeroFive;
+export default BannerOne;
