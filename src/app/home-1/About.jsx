@@ -32,10 +32,10 @@ function AboutOne() {
                                 <div className="icon radius-10 center-item">
                                     <i className="flaticon-people" />
                                 </div>
-                                <div className="content">
+                                {/* <div className="content">
                                     <span className="h5">50+</span>
                                     <p>Experience Staff</p>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="image__card__image wow fadeInUp">
                                 <img
@@ -47,17 +47,14 @@ function AboutOne() {
                             </div>
                         </div>
                         <div className="content">
-                            <span className="h6 subtitle__icon__two d-block wow fadeInUp">About Us</span>
+                            <span className="h6 subtitle__icon__two d-block wow fadeInUp">The Eden Dining Philosophy</span>
                             <h2 className="content__title wow fadeInUp">
-                                Welcome To Our Moonlit Hotel &amp; Resort
+                                The Eden Dining Philosophy
+
                             </h2>
                             <p className="content__subtitle wow fadeInUp" data-wow-delay=".3s">
-                                Welcome to Bokinn, where luxury meets comfort in the heart of
-                                Canada. Since 1999, we have been dedicated to providing an
-                                exceptional stay for our guests, blending modern amenities with
-                                timeless elegance. Our beautifully designed rooms and suites offer
-                                stunning views and plush accommodations, ensuring a restful
-                                retreat whether you're here for business or leisure.
+                               Our dining is rooted in quality ingredients, thoughtful cooking and warm hospitality, creating comforting and flavourful food.
+
                             </p>
                             <Link href="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
                                 <span>Learn More</span>

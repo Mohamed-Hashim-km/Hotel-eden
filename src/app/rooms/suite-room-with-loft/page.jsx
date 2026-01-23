@@ -82,33 +82,7 @@ import TestimonialOne from '../../home-1/TestimonialOne'
 
 
 
-  const rooms = [
-    {
-      title: "10-Bed Dormitory",
-      slug: "/rooms/10-bed-dormitory",
-      description: "A spacious and thoughtfully designed dormitory, perfect for large groups seeking comfort, privacy, and modern amenities.",
-    },
-    {
-      title: "Premium Room",
-      slug: "/rooms/premium-room",
-      description: "Our most luxurious and spacious accommodation for a truly exceptional stay.",
-    },
-    {
-      title: "Suite Double Room",
-      slug: "/rooms/suite-room-double",
-      description: "The Suite Double Room features a spacious, elegantly designed interior with a comfortable double bed, modern amenities, and a relaxing atmosphere.",
-    },
-    {
-      title: "Suite Room",
-      slug: "/rooms/suite-room",
-      description: "An expansive suite with sophisticated decor and thoughtful amenities, designed for comfort and relaxation",
-    },
-    {
-      title: "Suite Room With Loft",
-      slug: "/rooms/suite-room-with-loft",
-      description: "A stylish suite featuring a loft area, offering extra space and a unique, airy atmosphere for guests.",
-    },
-  ];
+
 
 const testimonialData = [
   {
@@ -143,6 +117,37 @@ const testimonialData = [
   },
 ];
 
+
+
+  const posts = [
+    {
+      title: "10-Bed Dormitory",
+      slug: "/rooms/10-bed-dormitory",
+      description: "A spacious and thoughtfully designed dormitory, perfect for large groups seeking comfort, privacy, and modern amenities.",
+    },
+    {
+      title: "6-Bed Dormitory",
+      slug: "/rooms/6-bed-dormitory",
+      description: "A cozy, group-friendly dormitory offering essential comforts for a relaxed and convenient stay.",
+    },
+    {
+      title: "Premium Room",
+      slug: "/rooms/premium-room",
+      description: "Our most luxurious and spacious accommodation for a truly exceptional stay.",
+    },
+    {
+      title: "Suite Double Room",
+      slug: "/rooms/suite-room-double",
+      description: "The Suite Double Room features a spacious, elegantly designed interior with a comfortable double bed, modern amenities, and a relaxing atmosphere.",
+    },
+    {
+      title: "Suite Room",
+      slug: "/rooms/suite-room",
+      description: "An expansive suite with sophisticated decor and thoughtful amenities, designed for comfort and relaxation",
+    },
+  
+  ];
+
 function page() {
   return (
     <>
@@ -157,8 +162,8 @@ function page() {
       
       {/* Updated Title and Description for 10-Bed Dormitory */}
       <HeroFive 
-        title="6‑Bed Dormitory" 
-        description="A cozy group-friendly dormitory designed for comfort and convenience, perfect for small groups seeking a relaxed and enjoyable stay."
+        title="Suite Room" 
+        description="The Suite Room offers expansive interiors with sophisticated decor, a separate seating or living space, and thoughtful amenities, creating a spacious and comfortable retreat where guests can relax and enjoy an elevated stay experience."
       />
 
       {/* Fixed Syntax Errors in Props (removed commas) */}
@@ -167,12 +172,13 @@ function page() {
         subtitle="Room Specific Amenities"
         description=""
         amenities={[
-          { id: 1, title: "Attached Bathroom" },
-          { id: 1, title: "Well-ventilated stay" },
-          { id: 1, title: "2 Complimentary water bottles" },
           { id: 1, title: "Air-Conditioning" },
-          { id: 1, title: "Geyser" },
-           { id: 1, title: "Upper floor reachable by lift" }
+          { id: 1, title: "Attached Bathroom" },
+          { id: 1, title: "Complimentary Toiletries" },
+          { id: 1, title: "Free Wifi" },
+      
+          { id: 1, title: "Well-ventilated stay" },
+
         ]}
       />
 

@@ -17,9 +17,10 @@ import AboutOne from "../home-1/About";
 import ActivitiesOne from "../activities/Activities";
 import ServiceTwo from "../home-5/Service";
 import GalleryOne from "../home-1/GalleryOne";
-import NewsletterOne from "../home-3/Newsletter";
+import NewsletterOne from "../rooms/premium-room/Newsletter";
 import FooterOne from "../home-1/FooterOne";
 import RoomFive from "../home-7/Room";
+import Overview from "./overview";
 
 function page() {
   return (
@@ -32,12 +33,12 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <TopBar />
+      {/* <TopBar /> */}
       <HeaderOne />
       {/* <BannerSix /> */}
       <HeroSix />
       <AboutOne />
-      <RoomFive posts={posts} />
+      <Overview  />
       {/* <ServiceTwo /> */}
       <ActivitiesOne />
       {/* <TestimonialSection className="pb-120" /> */}

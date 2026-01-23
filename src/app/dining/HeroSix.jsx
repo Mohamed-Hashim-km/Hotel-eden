@@ -34,14 +34,15 @@ const HeroSix = () => {
           </div>
 
           {/* Overlapping Content Card */}
-          <div className="col-lg-5 position-absolute" style={{ right: "5%", top: "50%", transform: "translateY(-50%)" }}>
+          <div className="col-lg-6 position-absolute" style={{ right: "5%", top: "50%", transform: "translateY(-50%)" }}>
             <div className="hero-content-card bg-white p-5 radius-10 shadow-lg wow fadeInUp" data-wow-delay=".3s">
-              <h1 className="title display-4 fw-bold mb-20 text-dark">Dining</h1>
-              <p className="description mb-30" style={{ color: "#6d758f" }}>
-                Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis sit phasellus mollis sit aliquam sit nullam neques.
+              <h1 className="content__title mb-20">Dining</h1>
+              <p className="content__subtitle mb-30">
+                At Eden, dining is an experience shaped by flavour, atmosphere, and thoughtful hospitality. Across our three distinctive restaurants, Hotel Tulip, Oyster Bay and Food & Forest, we offer a range of settings and cuisines to suit every mood and moment.
+
               </p>
               <Link href="#" className="theme-btn btn-style fill no-border d-inline-flex align-items-center gap-2">
-                <span>Book Now</span> <FaArrowRight />
+                <span>Book Now</span> 
               </Link>
             </div>
           </div>

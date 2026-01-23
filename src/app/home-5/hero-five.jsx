@@ -32,9 +32,9 @@ function BannerOne({title, description}) {
                     <button href="/room-two" className="theme-btn btn-style fill no-border ">
                       <span>Book Now</span>
                     </button>
-                    <button className="theme-btn  btn-style sm-btn border d-none d-lg-block bg-white text-dark" onClick={() => setIsSignupOpen(true)}>
+                    {/* <button className="theme-btn  btn-style sm-btn border d-none d-lg-block bg-white text-dark" onClick={() => setIsSignupOpen(true)}>
                       <span>Sign Up</span>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

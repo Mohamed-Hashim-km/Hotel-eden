@@ -25,6 +25,11 @@ const roomTypes = [
     description: "Our most luxurious and spacious accommodation for a truly exceptional stay.",
     gradient: "linear-gradient(135deg, #2a2d45 0%, #4a5b7d 100%)",
   },
+  {
+    title: "Dormitory",
+    description: "A comfortable and well-maintained shared accommodation option, ideal for groups, travelers, or budget-friendly stays.",
+    gradient: "linear-gradient(135deg, #2a2d45 0%, #4a5b7d 100%)",
+  },
 ];
 
 const RoomsShowcase = () => {
@@ -40,9 +45,9 @@ const RoomsShowcase = () => {
           </div>
         </div>
 
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
           {roomTypes.map((room, index) => (
-            <div key={index} className="col-xl-3 col-lg-4 col-md-6">
+            <div key={index} className="col-xl-4 col-lg-4 col-md-6">
               <div
                 className="room-showcase-card position-relative overflow-hidden radius-10 h-100"
                 style={{

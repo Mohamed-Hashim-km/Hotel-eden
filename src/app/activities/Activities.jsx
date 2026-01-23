@@ -35,7 +35,7 @@ function ActivitiesOne() {
                                 </div>
                                 <div className="activities__meta">
                                     <Link href="#" className="h4 title d-block"> {/* Updated link */}
-                                        Cultural Tours
+                                       Tulip
                                     </Link>
                                     <Link href="#" className="theme-btn btn-style border">
                                         <span>View More</span>
@@ -56,7 +56,7 @@ function ActivitiesOne() {
                                 </div>
                                 <div className="activities__meta">
                                     <Link href="#" className="h4 title d-block"> {/* Updated link */}
-                                        Cultural Tours
+                                        Oyster Bay
                                     </Link>
                                     <Link href="#" className="theme-btn btn-style border">
                                         <span>View More</span>
@@ -77,7 +77,7 @@ function ActivitiesOne() {
                                 </div>
                                 <div className="activities__meta">
                                     <Link href="#" className="h4 title d-block"> {/* Updated link */}
-                                        Cultural Tours
+                                        Food & forest
                                     </Link>
                                     <Link href="#" className="theme-btn btn-style border">
                                         <span>View More</span>

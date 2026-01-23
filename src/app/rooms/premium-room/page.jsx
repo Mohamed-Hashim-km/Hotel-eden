@@ -1,86 +1,115 @@
+import React from 'react'
 
-import Home3Hero from "./Home3Hero";
+import TestimonialFive from '../../home-1/TestimonialOne'
+import FooterFour from '../../home-5/Footer'
+import BackToTop from '../../home-1/BackToTop'
+import GDPRCookie from '../../home-1/GDPRCookie'
+import NewsletterOne from '../../rooms/premium-room/Newsletter'
+import GalleryOne from '../../home-1/GalleryOne'
+import HeaderOne from '../../home-1/Header'
+import Amenities from '../../rooms/premium-room/Amenities'
+import HeroFive from '../../home-5/hero-five'
+import CommonAmenities from '../../karwar/CommonAmenities';
+import NewsLetterOne from '../../rooms/premium-room/Newsletter';
+import FooterOne from '../../home-1/FooterOne';
+import BlogTwo from '../../home-5/Blog'
+import TestimonialOne from '../../home-1/TestimonialOne'
 
-import NewsletterOne from "./Newsletter";
+// const posts = [
+//   {
+//     id: 1,
+//     slug: "/rooms/10-bed-dormitory",
+//     image: "/assets/images/pages/room/1.webp",
+//     bannerImg: "/assets/images/pages/room/1.webp",
+//     title: "10-Bed Dormitory",
+//     price: "100$",
+//     author: "Mack jon",
+//     description: "A spacious and thoughtfully designed dormitory, perfect for large groups seeking comfort, privacy, and modern amenities.",
+//     authorImg: "author__one.png",
+//     publishedDate: "20 Aug 2024",
+//   },
+//   {
+//     id: 1,
+//     slug: "/rooms/6-bed-dormitory",
+//     image: "/assets/images/pages/room/1.webp",
+//     bannerImg: "/assets/images/pages/room/1.webp",
+//     title: "6-Bed Dormitory",
+//     price: "100$",
+//     author: "Mack jon",
+//     description: "A cozy, group-friendly dormitory offering essential comforts for a relaxed and convenient stay.",
+//     authorImg: "author__one.png",
+//     publishedDate: "20 Aug 2024",
+//   },
 
-import BackToTop from "../../home-1/BackToTop";
-import GDPRCookie from "../../home-1/GDPRCookie";
+//   {
+//     id: 1,
+//     slug: "/rooms/premium-room-king-size-bedded",
+//     image: "/assets/images/pages/room/1.webp",
+//     bannerImg: "/assets/images/pages/room/1.webp",
+//     title: "Premium Room (King-Size Bedded)",
+//     price: "100$",
+//     author: "Mack jon",
+//     description: "A stylish and comfortable room with a king-size bed, designed for guests who prefer extra space and a relaxed stay.",
+//     authorImg: "author__one.png",
+//     publishedDate: "20 Aug 2024",
+//   },
+//   {
+//     id: 1,
+//     slug: "/rooms/suite-room-with-balcony",
+//     image: "/assets/images/pages/room/1.webp",
+//     bannerImg: "/assets/images/pages/room/1.webp",
+//     title: "Suite Room (With Balcony)",
+//     price: "100$",
+//     author: "Mack jon",
+//     description: "A spacious and refined suite with a private balcony, perfect for guests who enjoy open views and an elevated stay experience.",
+//     authorImg: "author__one.png",
+//     publishedDate: "20 Aug 2024",
+//   },
+//   {
+//     id: 1,
+//     slug: "/rooms/suite-room-without-balcony",
+//     image: "/assets/images/pages/room/1.webp",
+//     bannerImg: "/assets/images/pages/room/1.webp",
+//     title: "Suite Room (Without Balcony)",
+//     price: "100$",
+//     author: "Mack jon",
+//     description: "A spacious and elegant suite offering extra comfort and a calm, relaxing stay environment.",
+//     authorImg: "author__one.png",
+//     publishedDate: "20 Aug 2024",
+//   }
+// ];
 
-import FooterOne from "../../home-1/FooterOne";
-
-import HeaderOne from "../../home-1/Header";
-import TestimonialOne from "../../home-1/TestimonialOne";
-import GalleryOne from "../../home-1/GalleryOne";
 
 
-import BlogTwo from "../../home-5/Blog";
 
-const posts = [
-  {
-    id: 1,
-    slug: "/rooms/club-room",
-    image: "/assets/images/pages/room/1.webp",
-    bannerImg: "/assets/images/pages/room/1.webp",
-    title: "Club Room",
-    price: "100$",
-    author: "Mack jon",
-    description: "A more spacious and refined room offering extra comfort and added conveniences for a more relaxed stay.",
-    authorImg: "author__one.png",
-    publishedDate: "20 Aug 2024",
-  },
-  {
-    id: 1,
-    slug: "/rooms/suite-room",
-    image: "/assets/images/pages/room/1.webp",
-    bannerImg: "/assets/images/pages/room/1.webp",
-    title: " Suite Room",
-    price: "100$",
-    author: "Mack jon",
-    description: "Designed for guests who enjoy more space, privacy and a more indulgent stay experience.",
-    authorImg: "author__one.png",
-    publishedDate: "20 Aug 2024",
-  },
-  {
-    id: 1,
-    slug: "/rooms/presidential-room",
-    image: "/assets/images/pages/room/1.webp",
-    bannerImg: "/assets/images/pages/room/1.webp",
-    title: "Presidential Room",
-    price: "100$",
-    author: "Mack jon",
-    description: "Our most luxurious and expansive accommodation, created for those who prefer the finest in comfort and space.",
-    authorImg: "author__one.png",
-    publishedDate: "20 Aug 2024",
-  },
-];
-
-export const features = [
-  {
-    id: 1,
-    title: "Air-Conditioning",
-    delay: ".3s",
-  },
-  {
-    id: 2,
-    title: "Android TV",
-    delay: ".4s",
-  },
-  {
-    id: 3,
-    title: "Free Toiletries",
-    delay: ".5s",
-  },
-  {
-    id: 4,
-    title: "Geyser",
-    delay: ".3s",
-  },
-  {
-    id: 5,
-    title: "Mini-Fridge",
-    delay: ".4s",
-  },
-];
+  const posts = [
+    {
+      title: "10-Bed Dormitory",
+      slug: "/rooms/10-bed-dormitory",
+      description: "A spacious and thoughtfully designed dormitory, perfect for large groups seeking comfort, privacy, and modern amenities.",
+    },
+    {
+      title: "6-Bed Dormitory",
+      slug: "/rooms/6-bed-dormitory",
+      description: "A cozy, group-friendly dormitory offering essential comforts for a relaxed and convenient stay.",
+    },
+    
+    {
+      title: "Suite Double Room",
+      slug: "/rooms/suite-room-double",
+      description: "The Suite Double Room features a spacious, elegantly designed interior with a comfortable double bed, modern amenities, and a relaxing atmosphere.",
+    },
+    {
+      title: "Suite Room",
+      slug: "/rooms/suite-room",
+      description: "An expansive suite with sophisticated decor and thoughtful amenities, designed for comfort and relaxation",
+    },
+    {
+      title: "Suite Room With Loft",
+      slug: "/rooms/suite-room-with-loft",
+      description: "A stylish suite featuring a loft area, offering extra space and a unique, airy atmosphere for guests.",
+    },
+  ];
 
 const testimonialData = [
   {
@@ -115,43 +144,47 @@ const testimonialData = [
   },
 ];
 
-
-
 function page() {
   return (
     <>
       <GDPRCookie
         settings={{
           title: "Accept Cookies & privacy",
-          message:
-            "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
-          expires: 90, // Cookie expiration in days
+          message: "Cookies enable you to use shopping carts and to personalize your experience on our sites, tell us which parts of our websites people have visited, help us measure the effectiveness of ads and web searches.",
+          expires: 90, 
         }}
       />
       <HeaderOne />
-      {/* <BannerThree /> */}
-    <Home3Hero  title={"Premium Room (Twin Bedded)"} desc={"A comfortable private room with twin beds, modern interiors, and all essential amenities for a peaceful stay. Designed for guests who value comfort and convenience, the Premium Room at Hotel Eden offers a relaxing space to unwind after a day in the city."} features={features}/>
-    
-      {/* <AdvanceForm /> */}
-      {/* <AboutThree /> */}
-      {/* <Amenities />
-      <GalleryOne /> */}
+      
+      {/* Updated Title and Description for 10-Bed Dormitory */}
+      <HeroFive 
+        title="Premium Room" 
+        description="The Premium Room at Eden Ember Castle, Gokarna offers a comfortable and thoughtfully designed space for a relaxed stay. With warm interiors, calming tones, and a peaceful atmosphere, it is ideal for unwinding after a day spent exploring the beaches and the town."
+      />
+
+      {/* Fixed Syntax Errors in Props (removed commas) */}
+      <CommonAmenities 
+        title=""
+        subtitle="Room Specific Amenities"
+        description=""
+        amenities={[
+          { id: 1, title: "Air-Conditioning" },
+          { id: 1, title: "Attached Bathroom" },
+          { id: 1, title: " Power Backup" },
+          { id: 1, title: "Well-ventilated stay" },
+          { id: 1, title: "Free Wifi" },
+          { id: 1, title: "Fully fenced property" },
+        ]}
+      />
+
        <GalleryOne /> 
-
-      {/* <FacilitiesTwo /> */}
-      {/* <RoomTwo posts={posts} /> */}
-      <TestimonialOne testimonials={testimonialData} />
-      {/* <VideoThree /> */}
-      {/* <NewsletterOne /> */}
-      {/* <OfferThree /> */}
-      {/* <Home5Blog data={posts} /> */}
-        <NewsletterOne title={"Book Your Premium Room Now"} />
+       <TestimonialOne testimonials={testimonialData} />
+      <NewsletterOne title={"Book Your Stay Now"} />
       <BlogTwo title="Other Rooms" data={posts} />
-
       <FooterOne />
       <BackToTop />
     </>
-  );
+  )
 }
 
-export default page;
+export default page

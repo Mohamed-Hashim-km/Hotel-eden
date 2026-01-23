@@ -20,7 +20,7 @@ function page() {
           expires: 90, // Cookie expiration in days
         }}
       />
-      <TopBar />
+      {/* <TopBar /> */}
       <HeaderOne />
       {/* <BreadcrumbOne
                 title="Contact Us"

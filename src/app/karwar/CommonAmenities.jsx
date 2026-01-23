@@ -10,10 +10,10 @@ const CommonAmenities = ({
     { id: 1, title: "Multi-cuisine Restaurants & Rooftop Dining" },
     { id: 2, title: "The Golden Leaf Spa & Wellness" },
     { id: 3, title: "Fitness Studio & Recreation Zone" },
-    { id: 4, title: "Banquet & Conference Facilities" }
+    { id: 4, title: "Banquet & Conference Facilities" },
   ],
 }) => {
-    const [isSignupOpen, setIsSignupOpen] = useState(false);
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
   return (
     <div className="rts__section section__padding">
       <div className="container">
@@ -21,12 +21,12 @@ const CommonAmenities = ({
         <div className="row justify-content-center text-center mb-50">
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".3s">
             <div className="section__topbar">
-             {title && <span className="h6 subtitle__icon__three mx-auto">{title}</span>}
+              {title && <span className="h6 subtitle__icon__three mx-auto">{title}</span>}
               {subtitle && <h2 className="section__title mb-30">{subtitle}</h2>}
             </div>
             {description && <p className="description ">{description}</p>}
           </div>
-           {/* <div className="d-flex justify-content-center mt-30 gap-3">
+          {/* <div className="d-flex justify-content-center mt-30 gap-3">
               <button href="#" className="theme-btn btn-style fill no-border">
                 <span>Get started</span>
               </button>
@@ -40,12 +40,13 @@ const CommonAmenities = ({
         </div>
 
         {/* Feature List */}
-        <div className="row g-4 wow fadeInUp" data-wow-delay=".5s">
+        <div className="row g-4 justify-content-center wow fadeInUp" data-wow-delay=".5s">
           {amenities.map((item, index) => (
             <div key={item.id || index} className="col-xl-3 col-lg-6 col-md-6">
               <div className="card rts__card is__home radius-6 h-100" style={{ minHeight: "170px" }}>
-                <div className="card-body d-flex align-items-center justify-content-center h-100">
+                <div className="card-body d-flex flex-column gap-2 align-items-center justify-content-center h-100">
                   <h6 className="card-title h6 mb-0 text-center">{item.title}</h6>
+                 {item.description && <p className="description">{item.description}</p>}
                 </div>
               </div>
             </div>
