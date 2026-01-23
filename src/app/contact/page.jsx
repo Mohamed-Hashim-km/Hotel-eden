@@ -27,7 +27,7 @@ function page() {
                 description="Whether you have questions, need assistance, or simply want to share."
             /> */}
       <ContactOne />
-      <Home5Blog data={posts} title="Blog" description="See Our Latest Blog" />
+      {/* <Home5Blog data={posts} title="Blog" description="See Our Latest Blog" /> */}
       <FooterOne />
       <BackToTop />
     </>

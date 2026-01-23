@@ -42,3 +42,30 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/* 1. The Keyframe Animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 2. The Sticky Class */
+.main__header.is__sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it sits on top */
+  background-color: #ffffff; /* Match your theme bg */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional shadow for depth */
+  
+  /* Apply the animation */
+  animation: slideDown 0.35s ease-in-out;
+}

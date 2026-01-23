@@ -8,7 +8,7 @@ const CommonAmenities = ({
   description = "From elegant in-room comforts to thoughtful property-wide amenities, Hotel Eden ensures a seamless and comfortable stay.",
   amenities = [
     { id: 1, title: "Multi-cuisine Restaurants & Rooftop Dining" },
-    { id: 2, title: "The Golden Leaf Spa & Wellness" },
+    { id: 2, title: "Spa & Wellness" },
     { id: 3, title: "Fitness Studio & Recreation Zone" },
     { id: 4, title: "Banquet & Conference Facilities" },
   ],

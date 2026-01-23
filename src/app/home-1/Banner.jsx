@@ -28,7 +28,7 @@ function BannerOne() {
                                             </span> */}
                   <h1> A New Standard of Comfort</h1>
                   <p className="sub__text">
-                   In the heart of Karwar, experience thoughtfully designed rooms, signature dining and warm hospitality shaped by years of experience.
+                  Defined by comfort, calm and considered design, every stay offers a refined environment for rest and renewal 
 
                   </p>
                   <div className="d-flex justify-content-center  gap-4 ">

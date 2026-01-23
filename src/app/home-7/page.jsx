@@ -14,8 +14,8 @@ import GDPRCookie from "../home-1/GDPRCookie";
 import AboutOne from "../home-1/About";
 import RoomEight from "../room/RoomEight";
 import GalleryFour from "../resturant/Gallery";
-import TestimonialTwo from "../home-2/Testimonial";
-import NewsletterOne from "../home-3/Newsletter";
+import TestimonialTwo from "../karwar/Testimonial";
+import NewsletterOne from "../rooms/premium-room/Newsletter";
 import Home5Blog from "../home-5/Blog";
 
 function page() {

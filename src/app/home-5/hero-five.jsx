@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import Link from "next/link";
-function BannerOne({title, description}) {
+function BannerOne({ title, description }) {
   return (
     <>
       {/* banner area */}
@@ -26,7 +26,15 @@ function BannerOne({title, description}) {
                   {/* <span className="h6 subtitle__icon">
                                                 A Boutique Stay Designed For You
                                             </span> */}
-                  <h1>{title}</h1>
+                  <h1>
+                    {title && title.split("(").length > 1 ? (
+                      <>
+                        {title.split("(")[0]} <br /> ({title.split("(").slice(1).join("(")}
+                      </>
+                    ) : (
+                      title
+                    )}
+                  </h1>
                   <p className="sub__text">{description}</p>
                   <div className="d-flex justify-content-center  gap-4 ">
                     <button href="/room-two" className="theme-btn btn-style fill no-border ">

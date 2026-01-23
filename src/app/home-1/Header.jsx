@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import OffcanvasMenu from "./OffcanvasMenu";
 import Link from "next/link";
 import LoginForm from "../form/LoginForm";
@@ -12,7 +12,16 @@ function HeaderOne() {
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
+  // New state and ref for calculating header height
+  const headerRef = useRef(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
   useEffect(() => {
+    // Calculate the header height once the component mounts
+    if (headerRef.current) {
+      setHeaderHeight(headerRef.current.offsetHeight);
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 150) {
         setIsSticky(true);
@@ -32,150 +41,163 @@ function HeaderOne() {
 
   return (
     <>
-      {/* header menu */}
-      <header className={`main__header header__function ${hydrated && isSticky ? "is__sticky" : ""}`}>
-        <div className="container">
-          <div className="row">
-            <div className="main__header__wrapper">
-              <div className="main__nav">
-                <div className="navigation d-none d-lg-block">
-                  <nav className="navigation__menu" id="main__menu">
-                    <ul className="list-unstyled">
-                      {/* Home Link (Direct Link) */}
-                      <li className="navigation__menu--item">
-                        <Link href="/" className="navigation__menu--item__link">
-                          Home
-                        </Link>
-                      </li>
-                      <li className="navigation__menu--item has-child has-arrow">
-                        <Link href="/" className="navigation__menu--item__link">
-                          Locations
-                        </Link>
-                        <ul className="submenu sub__style" role="menu">
-                          <li role="menuitem">
-                            <Link href="/gokarna">Gokarna</Link>
-                          </li>
-                          <li role="menuitem">
-                            <Link href="/karwar">Karwar</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      {/* Rooms Menu */}
-                      <li className="navigation__menu--item has-child has-arrow">
-                        <Link href="/" className="navigation__menu--item__link">
-                          Rooms
-                        </Link>
-                        <ul className="submenu sub__style" role="menu">
-                          <li role="menuitem" className="has-child has-arrow">
-                            <Link href="/">Room Style</Link>
-                            <ul className="sub__style" role="menu">
-                              <li role="menuitem">
-                                <Link href="/rooms/premium-room">Premium Room</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/club-room">club-room</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/presidential-room">Presidential Room</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/suite-room">Suite Room</Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li role="menuitem" className="has-child has-arrow">
-                            <Link href="/">Karwar Rooms</Link>
-                            <ul className="sub__style" role="menu">
-                              <li role="menuitem">
-                                <Link href="/rooms/premium-room-twin-bedded">Premium Room (Twin Bedded)</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/premium-room-king-size-bedded">Premium Room (King-Size Bedded)</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/club-room">Club Rooms</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/suite-room-with-balcony">Suite Room (With Balcony)</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/suite-room-without-balcony">Suite Room (Without Balcony)</Link>
-                              </li>
-                              <li role="menuitem">
-                                <Link href="/rooms/presidential-room">Presidential Room</Link>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
+      {/* Wrapper div to prevent content jumping. 
+        It reserves the height of the header when isSticky is true.
+      */}
+      <div style={{ height: isSticky ? `${headerHeight}px` : 'auto' }}>
+        <header 
+          ref={headerRef} 
+          className={`main__header header__function ${hydrated && isSticky ? "is__sticky" : ""}`}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="main__header__wrapper">
+                <div className="main__nav">
+                  <div className="navigation d-none d-lg-block">
+                    <nav className="navigation__menu" id="main__menu">
+                      <ul className="list-unstyled">
+                        {/* Home Link (Direct Link) */}
+                        <li className="navigation__menu--item">
+                          <Link href="/" className="navigation__menu--item__link">
+                            Home
+                          </Link>
+                        </li>
+                        <li className="navigation__menu--item has-child has-arrow">
+                          <Link href="/" className="navigation__menu--item__link">
+                            Locations
+                          </Link>
+                          <ul className="submenu sub__style" role="menu">
+                            <li role="menuitem">
+                              <Link href="/gokarna">Eden Ember Castle Gokarna</Link>
+                            </li>
+                            <li role="menuitem">
+                              <Link href="/karwar">Hotel Eden Karwar</Link>
+                            </li>
+                          </ul>
+                        </li>
+                        {/* Rooms Menu */}
+                        {/* <li className="navigation__menu--item has-child has-arrow">
+                          <Link href="/" className="navigation__menu--item__link">
+                            Rooms
+                          </Link>
+                          <ul className="submenu sub__style" role="menu">
+                            <li role="menuitem" className="has-child has-arrow">
+                              <Link href="/">Room Style</Link>
+                              <ul className="sub__style" role="menu">
+                                <li role="menuitem">
+                                  <Link href="/rooms/premium-room">Premium Room</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/club-room">club-room</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/presidential-room">Presidential Room</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/suite-room">Suite Room</Link>
+                                </li>
+                              </ul>
+                            </li>
+                            <li role="menuitem" className="has-child has-arrow">
+                              <Link href="/">Karwar Rooms</Link>
+                              <ul className="sub__style" role="menu">
+                                <li role="menuitem">
+                                  <Link href="/rooms/premium-room-twin-bedded">Premium Room (Twin Bedded)</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/premium-room-king-size-bedded">Premium Room (King-Size Bedded)</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/club-room">Club Rooms</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/suite-room-with-balcony">Suite Room (With Balcony)</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/suite-room-without-balcony">Suite Room (Without Balcony)</Link>
+                                </li>
+                                <li role="menuitem">
+                                  <Link href="/rooms/presidential-room">Presidential Room</Link>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li> */}
 
-                      {/* Pages Menu */}
+                        {/* Pages Menu */}
 
-                      {/* Blog Menu */}
-                      <li className="navigation__menu--item has-child has-arrow">
-                        <Link href="/" className="navigation__menu--item__link">
-                          Blog
-                        </Link>
-                        <ul className="submenu sub__style" role="menu">
-                          <li role="menuitem">
-                            <Link href="/blog">Blog</Link>
-                          </li>
-                          <li role="menuitem">
-                            <Link href="/blog/Live-Elegantly-in-Our-Contemporary-Suite-for-Apartment">Blog Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-<li className="navigation__menu--item">
-                        <Link href="/event" className="navigation__menu--item__link">
-                         Events
-                        </Link>
-                      </li>
-                      {/* Contact Link */}
-                      <li className="navigation__menu--item">
-                        <Link href="/contact" className="navigation__menu--item__link">
-                          Contact
-                        </Link>
-                      </li>
-                    </ul>
-                  </nav>
+                        {/* Blog Menu */}
+                        {/* <li className="navigation__menu--item has-child has-arrow">
+                          <Link href="/" className="navigation__menu--item__link">
+                            Blog
+                          </Link>
+                          <ul className="submenu sub__style" role="menu">
+                            <li role="menuitem">
+                              <Link href="/blog">Blog</Link>
+                            </li>
+                            <li role="menuitem">
+                              <Link href="/blog/Live-Elegantly-in-Our-Contemporary-Suite-for-Apartment">Blog Details</Link>
+                            </li>
+                          </ul>
+                        </li> */}
+                        <li className="navigation__menu--item">
+                          <Link href="/spa" className="navigation__menu--item__link">
+                           Spa
+                          </Link>
+                        </li>
+                        <li className="navigation__menu--item">
+                          <Link href="/events" className="navigation__menu--item__link">
+                           Events
+                          </Link>
+                        </li>
+                        {/* Contact Link */}
+                        <li className="navigation__menu--item">
+                          <Link href="/contact" className="navigation__menu--item__link">
+                            Contact
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
-              </div>
 
-              {/* Logo */}
-              <div className="main__logo">
-                <Link href="/">
-                  <img className="logo__class" src="/assets/images/logo/eden.svg" alt="eden" />
-                </Link>
-              </div>
+                {/* Logo */}
+                <div className="main__logo">
+                  <Link href="/">
+                    <img className="logo__class" src="/assets/images/logo/eden.svg" alt="eden" />
+                  </Link>
+                </div>
 
-              {/* Right Side Buttons */}
-              <div className="main__right">
-                {/* Sign In Button */}
-                {/* <button className="theme-btn btn-style sm-btn border d-none d-lg-block" onClick={() => setIsLoginOpen(true)}>
-                  <span>Sign In</span>
-                </button> */}
+                {/* Right Side Buttons */}
+                <div className="main__right">
+                  {/* Sign In Button */}
+                  {/* <button className="theme-btn btn-style sm-btn border d-none d-lg-block" onClick={() => setIsLoginOpen(true)}>
+                    <span>Sign In</span>
+                  </button> */}
 
-                {/* Sign Up Button */}
-                {/* <button className="theme-btn btn-style sm-btn border d-none d-lg-block" onClick={() => setIsSignupOpen(true)}>
-                  <span>Sign Up</span>
-                </button> */}
+                  {/* Sign Up Button */}
+                  {/* <button className="theme-btn btn-style sm-btn border d-none d-lg-block" onClick={() => setIsSignupOpen(true)}>
+                    <span>Sign Up</span>
+                  </button> */}
 
-                {/* Book Now Button */}
-                <Link href="/room/the-ritz-carlton" className="theme-btn btn-style sm-btn fill">
-                  <span>Book Now</span>
-                </Link>
+                  {/* Book Now Button */}
+                  <Link href="/room/the-ritz-carlton" className="theme-btn btn-style sm-btn fill">
+                    <span>Book Now</span>
+                  </Link>
 
-                {/* Mobile Menu Button */}
-                <button className="theme-btn btn-style sm-btn fill menu__btn d-lg-none" onClick={() => setIsOffcanvasOpen(true)}>
-                  <span>
-                    <img src="/assets/images/icon/menu-icon.svg" alt="menu" />
-                  </span>
-                </button>
+                  {/* Mobile Menu Button */}
+                  <button className="theme-btn btn-style sm-btn fill menu__btn d-lg-none" onClick={() => setIsOffcanvasOpen(true)}>
+                    <span>
+                      <img src="/assets/images/icon/menu-icon.svg" alt="menu" />
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
+      
       <OffcanvasMenu isOpen={isOffcanvasOpen} onClose={() => setIsOffcanvasOpen(false)} />
       {/* Login Form Modal */}
       <LoginForm

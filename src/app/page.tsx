@@ -33,27 +33,22 @@ function Page() {
   const facilities = [
   {
     title: "Tulip – The Gourmet Restaurant",
-    slug: "tulip-gourmet-restaurant",
     description: "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals."
   },
   {
     title: "Food & Forest – Rooftop Dining",
-    slug: "food-and-forest-rooftop-dining",
     description: "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings."
   },
   {
     title: "Oyster Bay – Seafood Speciality",
-    slug: "oyster-bay-seafood-speciality",
     description: "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste."
   },
   {
     title: "The Golden Leaf Spa",
-    slug: "the-golden-leaf-spa",
     description: "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance."
   },
   {
     title: "Terminal 5 – Events & Celebrations",
-    slug: "terminal-5-events-and-celebrations",
     description: "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations."
   }
 ];
@@ -90,7 +85,7 @@ function Page() {
           title="Signature Spaces For Every Occasion"
           description="From elegant receptions, private celebrations, professional conferences and corporate meetings, Hotel Eden offers thoughtfully designed event spaces that adapt to your vision."
           buttonText="Explore Event Spaces"
-          buttonLink="#"
+          buttonLink="/events"
           imageSrc=""
         />
         <FaqHomeOne
@@ -98,7 +93,7 @@ function Page() {
           title="Everything You Need to Know"
           description=" Essential information to help you enjoy a seamless stay at Hotel Eden."
         />
-        <Home5Blog title="Offering Carousel"  description="" data={facilities} />
+        <Home5Blog title=""  description="" data={facilities} />
         {/* <VideoOne /> */}
         {/* <OfferOne /> */}
 

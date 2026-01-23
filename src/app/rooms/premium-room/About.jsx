@@ -31,7 +31,7 @@ function AboutThree() {
                 </p>
                 <ul className="content__list wow fadeInUp" data-wow-delay=".3s">
                   <li>
-                    <i className="fa-regular fa-check"></i>46 elegantly designed rooms across multiple categories
+                    <i className="fa-regular fa-check"></i>Elegantly designed rooms across multiple categories
                   </li>
                   <li>
                     <i className="fa-regular fa-check"></i>Three distinctive dining experiences under one roof

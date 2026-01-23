@@ -21,8 +21,8 @@ function RoomCardOne(props) {
                 />
             </div>
             <div className="room__content">
-                <Link href={`/room/${Slug || "details"}`} className="room__title">
-                    <h5>{Title || "The Ritz-Carlton"}</h5>
+                <Link href={`/room/${Slug}`} className="room__title">
+                    <h5>{Title}</h5>
                 </Link>
                 <div className="room__content__meta">
                     {/* <span>
@@ -33,7 +33,7 @@ function RoomCardOne(props) {
                     </span> */}
                     <span>
                         {/* <i className="flaticon-user" /> */}
-                        {Description || '120$'}
+                        {Description}
                     </span>
                 </div>
                 {/* <span className="h4 rent mb-0 mt-15 d-block">{Price || '120$'}</span> */}
