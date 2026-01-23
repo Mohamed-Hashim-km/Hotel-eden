@@ -26,10 +26,10 @@ function BannerOne() {
                   {/* <span className="h6 subtitle__icon">
                                                 A Boutique Stay Designed For You
                                             </span> */}
-                  <h1> A Boutique Stay Designed For You</h1>
+                  <h1> A New Standard of Comfort</h1>
                   <p className="sub__text">
-                    In the heart of Karwar, experience thoughtfully designed rooms, signature dining and warm hospitality shaped by years of
-                    experience.
+                   In the heart of Karwar, experience thoughtfully designed rooms, signature dining and warm hospitality shaped by years of experience.
+
                   </p>
                   <div className="d-flex justify-content-center  gap-4 ">
                     <button href="/room-two" className="theme-btn btn-style fill no-border ">

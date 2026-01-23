@@ -32,7 +32,6 @@ function BannerTwo() {
                                             <h1>Discover the Charm of Karwar</h1>
                                             <p className="sub__text">
                                                Surrounded by pristine beaches, rivers and scenic landscapes, Karwar is a beautiful coastal town known for its calm atmosphere and natural beauty. From quiet waterfronts to local culture and cuisine, Karwar offers the perfect setting for a relaxed getaway.
-
                                             </p>
                                             <div className="d-flex justify-content-center  gap-4 ">
                     <button href="/room-two" className="theme-btn btn-style fill no-border ">

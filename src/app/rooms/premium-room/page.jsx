@@ -1,26 +1,16 @@
-import React from "react";
-import HeaderTwo from "./Header";
-import BannerThree from "./Banner";
-import Home3Hero from "./Home3Hero";
-import Amenities from "./Amenities";
-import AdvanceForm from "../../home-1/AdvanceForm";
-import AboutThree from "./About";
-import FacilitiesTwo from "../../location/Facilities";
-import RoomTwo from "../../location/Room";
 
-import TestimonialTwo from "../../location/Testimonial";
-import VideoThree from "./Video";
-import OfferThree from "./Offer";
+import Home3Hero from "./Home3Hero";
+
 import NewsletterOne from "./Newsletter";
-import FooterTwo from "./Footer";
+
 import BackToTop from "../../home-1/BackToTop";
 import GDPRCookie from "../../home-1/GDPRCookie";
-import GalleryOne from "../../home-1/GalleryOne";
-import Home5Blog from "../../home-5/Blog";
+
 import FooterOne from "../../home-1/FooterOne";
-import faqData from "../../data/faq.json";
+
 import HeaderOne from "../../home-1/Header";
 import TestimonialOne from "../../home-1/TestimonialOne";
+import GalleryOne from "../../home-1/GalleryOne";
 
 
 import BlogTwo from "../../home-5/Blog";
@@ -98,7 +88,7 @@ const testimonialData = [
     author: "Ravindra Tayalur",
     designation: "",
     review:
-      "Because all the facilities were excellent. I stayed for two days in Hotel Eden. The property is new and has just completed 5 months. The rooms are big and with modern amenities. The staff at the front desk were polite and helpful. The house keeping was good. The breakfast served was especially nice. Overall a great stay within the budget. I would like to stay there again.",
+      "Stayed for two days at the new Hotel Eden. Rooms are spacious with modern amenities, staff were polite and helpful, housekeeping was good, and breakfast was excellent. Great stay within budget.",
     img: "/assets/images/author/author-2x.webp",
     rating: 5,
     date: "2 years ago",
@@ -108,7 +98,7 @@ const testimonialData = [
     author: "Natalie Harper",
     designation: "",
     review:
-      "This was one of the nicest hotels I've stayed in during my travelling around India for 5 months - and I'm travelling on a budget. It is like a 5 Star hotel but at such a great price! Also the staff are AMAZING!!! I arrived late and was hungry and after a bad day wanted a beer. The bar wasn't open yet so one of the staff went out to get me a beer and even though the kitchen was closed they made a great sandwich with French fries. The restaurant is also great for full meals - lovely tandoori paneer! Thank you all for great hospitality and great service!",
+      "One of the nicest budget hotels I’ve stayed at in India. Staff were amazing, went out of their way to help, and the restaurant served delicious meals. It felt like a 5-star experience at a great price.",
     img: "/assets/images/author/author-4.webp",
     rating: 5,
     date: "2 years ago",
@@ -118,7 +108,7 @@ const testimonialData = [
     author: "Umang Malhotra",
     designation: "",
     review:
-      "I loved my stay of 1 Night at Hotel Eden Karvar. Their rooms are big and spacious. The morning breakfast buffet is wide and has a good spread. Service by staff members is also amazing. Room bathrooms are very cozy and rooms are spacious, comfortable. Above all, room prices are affordable.",
+      "I loved my 1-night stay at Hotel Eden, Karwar. Spacious, comfortable rooms with cozy bathrooms, great breakfast buffet, and excellent staff service. Affordable and highly recommended.",
     img: "/assets/images/author/author-4.webp",
     rating: 5,
     date: "2 years ago",
@@ -140,13 +130,13 @@ function page() {
       />
       <HeaderOne />
       {/* <BannerThree /> */}
-    <Home3Hero  title={"Premium Room"} desc={" Designed for guests who value comfort and convenience, the Premium Room at Hotel Eden offers a relaxing space to unwind after a day in the city. Whether you’re here for business or leisure, this room gives you everything you need for a smooth and pleasant stay."} features={features}/>
-      <NewsletterOne title={"Book Your Premium Room Now"} />
-      <BlogTwo title="Other Rooms" data={posts} />
+    <Home3Hero  title={"Premium Room (Twin Bedded)"} desc={"A comfortable private room with twin beds, modern interiors, and all essential amenities for a peaceful stay. Designed for guests who value comfort and convenience, the Premium Room at Hotel Eden offers a relaxing space to unwind after a day in the city."} features={features}/>
+    
       {/* <AdvanceForm /> */}
       {/* <AboutThree /> */}
       {/* <Amenities />
       <GalleryOne /> */}
+       <GalleryOne /> 
 
       {/* <FacilitiesTwo /> */}
       {/* <RoomTwo posts={posts} /> */}
@@ -155,6 +145,8 @@ function page() {
       {/* <NewsletterOne /> */}
       {/* <OfferThree /> */}
       {/* <Home5Blog data={posts} /> */}
+        <NewsletterOne title={"Book Your Premium Room Now"} />
+      <BlogTwo title="Other Rooms" data={posts} />
 
       <FooterOne />
       <BackToTop />

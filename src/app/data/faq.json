@@ -23,5 +23,10 @@
     "id": 5,
     "question": "Can I host events at Hotel Eden?",
     "answer": "Yes, we offer banquet and conference spaces for events and celebrations."
+  },
+   {
+    "id": 6,
+    "question": "Is Hotel Eden affordable?",
+    "answer": "Yes, Hotel Eden offers a great balance of comfort, facilities, and value for money."
   }
 ]

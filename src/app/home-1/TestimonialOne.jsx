@@ -15,7 +15,7 @@ import "swiper/css/scrollbar";
  * @param {string} props.title
  * @param {string} props.description
  */
-function TestimonialOne({ testimonials = [], textSize = "",title=" Testimonial",description="" }) {
+function TestimonialOne({ testimonials = [], textSize = "", title = " Testimonial", description = "" }) {
   const data = typeof testimonials === "string" ? JSON.parse(testimonials) : testimonials;
 
   return (
@@ -74,7 +74,9 @@ function TestimonialOne({ testimonials = [], textSize = "",title=" Testimonial",
                               ))}
                               {item.date && <span className="text-muted mb-0 ms-2">{item.date}</span>}
                             </div>
-                            <span className={`slider__text d-block ${textSize}`}>{item.review}</span>
+                            <span className={`slider__text d-block ${textSize}`} style={{ fontSize: "18px", lineHeight: "28px" }}>
+                              {item.review}
+                            </span>
                             <div className="slider__author__info">
                               <div className="slider__author__info__content">
                                 <h6 className="mb-0">{item.author}</h6>

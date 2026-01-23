@@ -46,4 +46,28 @@
         "authorImg": "author__one.png",
         "publishedDate": "20 Aug 2024",
         "description":"Seamless support and personalized assistance, anytime you need it."
+    },
+{
+        "id": 3,
+        "slug": "waldorf-astoria-hotels",
+        "image": "/assets/images/pages/room/3.webp",
+        "bannerImg": "/assets/images/pages/room/3.webp",
+        "title": "Terminal 5 ",
+        "price": "120$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":"Hotel Eden’s elegant banquet and event space, designed to host weddings, celebrations, corporate meetings, and special occasions."
+    },
+    {
+        "id": 4,
+        "slug": "the-ritz-carlton-2",
+        "image": "/assets/images/pages/room/4.webp",
+        "bannerImg": "/assets/images/pages/room/4.webp",
+        "title": "Restaurants",
+        "price": "150$",
+        "author" : "Mack jon",
+        "authorImg": "author__one.png",
+        "publishedDate": "20 Aug 2024",
+        "description":"Hotel Eden brings together three unique restaurants: Hotel Tulip, Oyster Bay, and Food & Forest, each offering a different atmosphere and dining experience."
     }]

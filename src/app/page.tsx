@@ -23,12 +23,40 @@ import RoomNine from "./room/RoomNine";
 import Home5Blog from "./home-5/Blog";
 import NewsletterOne from "./rooms/premium-room/Newsletter";
 import HeaderTwo from "./rooms/premium-room/Header";
-import posts from "./data/data-post.json";
+
+import posts from "./data/location.json";
 import faqData from "./data/faq.json";
 import testimonialData from "./data/testimonial-one.json";
 
 function Page() {
   // Use PascalCase for Next.js pages
+  const facilities = [
+  {
+    title: "Tulip – The Gourmet Restaurant",
+    slug: "tulip-gourmet-restaurant",
+    description: "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals."
+  },
+  {
+    title: "Food & Forest – Rooftop Dining",
+    slug: "food-and-forest-rooftop-dining",
+    description: "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings."
+  },
+  {
+    title: "Oyster Bay – Seafood Speciality",
+    slug: "oyster-bay-seafood-speciality",
+    description: "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste."
+  },
+  {
+    title: "The Golden Leaf Spa",
+    slug: "the-golden-leaf-spa",
+    description: "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance."
+  },
+  {
+    title: "Terminal 5 – Events & Celebrations",
+    slug: "terminal-5-events-and-celebrations",
+    description: "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations."
+  }
+];
   return (
     <>
       <div style={{ overflow: "hidden" }}>
@@ -45,11 +73,12 @@ function Page() {
         <BannerOne />
         {/* <AdvanceForm /> */}
         <AboutThree />
-        <FacilitiesOne />
+        <Home5Blog title="In the Heart of Karwar" description="Stay close to everything that matters. Hotel Eden’s central location makes it easy to explore Karwar’s beaches, coastline, and key attractions while still enjoying a peaceful and comfortable stay." data={posts} />
+        {/* <FacilitiesOne /> */}
         <RoomsShowcase />
         <RoomOne className="" />
 
-        <GalleryOne />
+        <GalleryOne title={"A Culinary Experience for Every Mood"} description={" From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof."} cta={"Explore All Restaurants"} />
         <TestimonialOne
           title="What Our Guests Love About Us"
           description="From authentic guest experiences and cherished memories, discover why Hotel Eden is the perfect choice for your stay."
@@ -59,7 +88,7 @@ function Page() {
 
         <EventShowcase
           title="Signature Spaces For Every Occasion"
-          description="From elegant receptions and private celebrations to professional conferences and corporate meetings, Hotel Eden offers thoughtfully designed event spaces that adapt to your vision."
+          description="From elegant receptions, private celebrations, professional conferences and corporate meetings, Hotel Eden offers thoughtfully designed event spaces that adapt to your vision."
           buttonText="Explore Event Spaces"
           buttonLink="#"
           imageSrc=""
@@ -67,9 +96,9 @@ function Page() {
         <FaqHomeOne
           faqData={faqData}
           title="Everything You Need to Know"
-          description=" Here are some quick answers to help you plan your stay at Hotel Eden with ease."
+          description=" Essential information to help you enjoy a seamless stay at Hotel Eden."
         />
-        <Home5Blog title="Offering Carousel" description="" data={posts} />
+        <Home5Blog title="Offering Carousel"  description="" data={facilities} />
         {/* <VideoOne /> */}
         {/* <OfferOne /> */}
 

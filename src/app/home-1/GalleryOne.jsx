@@ -9,7 +9,7 @@ import Modal from "./Modal";
 import Link from "next/link";
 // import Modal from './Modal'; // Import the Modal component
 
-function GalleryOne() {
+function GalleryOne({title,description,cta}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState("");
 
@@ -35,14 +35,13 @@ function GalleryOne() {
                 {/* <span className="h6 subtitle__icon__three mx-auto">
                   Instagram Post
                 </span> */}
-                <h2 className="section__title">A Culinary Experience for Every Mood</h2>
-                <p className="section__subtitle">
-                  From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining
-                  destinations under one roof.
-                </p>
-                <Link href="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
-                  <span>Explore All Restaurants</span>
-                </Link>
+                {title&&<h2 className="section__title">{title}</h2>}
+              { description&& <p className="section__subtitle">
+                {description}
+                </p>}
+               { cta&&<Link href="#" className="theme-btn btn-style fill no-border wow fadeInUp" data-wow-delay=".5s">
+                  <span>{cta}</span>
+                </Link>}
               </div>
             </div>
           </div>

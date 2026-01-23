@@ -9,7 +9,7 @@ import GalleryOne from '../../home-1/GalleryOne'
 import HeaderOne from '../../home-1/Header'
 import Amenities from '../../rooms/premium-room/Amenities'
 import HeroFive from '../../home-5/hero-five'
-import CommonAmenities from '../../location/CommonAmenities';
+import CommonAmenities from '../../karwar/CommonAmenities';
 import NewsLetterOne from '../../rooms/premium-room/Newsletter';
 import FooterOne from '../../home-1/FooterOne';
 import BlogTwo from '../../home-5/Blog'

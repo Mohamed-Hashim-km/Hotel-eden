@@ -7,14 +7,10 @@ const CommonAmenities = ({
   subtitle = "Everything You Need for a Comfortable Stay",
   description = "From elegant in-room comforts to thoughtful property-wide amenities, Hotel Eden ensures a seamless and comfortable stay.",
   amenities = [
-    { id: 1, title: "24/7 Front Desk & Guest Assistance" },
-    { id: 2, title: "Multi-cuisine Restaurants & Rooftop Dining" },
-    { id: 3, title: "The Golden Leaf Spa & Wellness" },
-    { id: 4, title: "Fitness Studio & Recreation Zone" },
-    { id: 5, title: "Banquet & Conference Facilities" },
-    { id: 6, title: "Basement Parking" },
-    { id: 7, title: "High-Speed Wi-Fi" },
-    { id: 8, title: "Room Service & Housekeeping" },
+    { id: 1, title: "Multi-cuisine Restaurants & Rooftop Dining" },
+    { id: 2, title: "The Golden Leaf Spa & Wellness" },
+    { id: 3, title: "Fitness Studio & Recreation Zone" },
+    { id: 4, title: "Banquet & Conference Facilities" }
   ],
 }) => {
     const [isSignupOpen, setIsSignupOpen] = useState(false);

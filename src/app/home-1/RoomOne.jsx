@@ -10,7 +10,7 @@ import RoomCardOne from "../room/RoomCardOne";
 import posts from "../data/spaces.json";
 
 function RoomOne({ className }) {
-  console.log(posts); // Debug: Check if multiple rooms exist
+// Debug: Check if multiple rooms exist
 
   return (
     <div className={`rts__section section__padding ${className}`}>
@@ -25,8 +25,8 @@ function RoomOne({ className }) {
             </div>
             <div className="section__content__right">
               <p>
-                From wellness and fitness to recreation and seamless service, Hotel Eden offers thoughtfully curated amenities designed to elevate
-                every moment of your stay.
+                From wellness and fitness to recreation and seamless service, Hotel Eden offers thoughtfully curated amenities designed to elevate every moment of your stay.
+
               </p>
             </div>
           </div>

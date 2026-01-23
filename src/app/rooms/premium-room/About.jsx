@@ -26,8 +26,8 @@ function AboutThree() {
                                 </span> */}
                 <h2 className="content__title wow fadeInUp">Built on Years of Trusted Hospitality</h2>
                 <p className="content__subtitle wow fadeInUp" data-wow-delay=".3s">
-                  Backed by years of hospitality experience, Hotel Eden brings together thoughtful design and warm service. Every detail is carefully
-                  curated to ensure a comfortable and memorable stay.
+                Backed by years of hospitality experience, Hotel Eden brings together thoughtful design and warm service. Every detail is carefully curated to ensure a comfortable and memorable stay.
+
                 </p>
                 <ul className="content__list wow fadeInUp" data-wow-delay=".3s">
                   <li>
@@ -38,9 +38,10 @@ function AboutThree() {
                   </li>
                   <li>
                     <i className="fa-regular fa-check"></i>Spa, fitness studio, recreation zone & banquet facilities
+
                   </li>
                 </ul>
-                <Link href="#" className="theme-btn btn-style fill no-border wow fadeInUp mt-4" data-wow-delay=".5s">
+                <Link href="/about" className="theme-btn btn-style fill no-border wow fadeInUp mt-4" data-wow-delay=".5s">
                   <span>Discover Our Story</span>
                 </Link>
               </div>
