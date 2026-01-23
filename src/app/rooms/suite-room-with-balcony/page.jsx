@@ -9,37 +9,13 @@ import GalleryOne from '../../home-1/GalleryOne'
 import HeaderOne from '../../home-1/Header'
 import Amenities from '../../rooms/premium-room/Amenities'
 import HeroFive from '../../home-5/hero-five'
-import CommonAmenities from '../../location/CommonAmenities';
+import CommonAmenities from '../../karwar/CommonAmenities';
 import NewsLetterOne from '../../rooms/premium-room/Newsletter';
 import FooterOne from '../../home-1/FooterOne';
 import BlogTwo from '../../home-5/Blog'
+import TestimonialOne from '../../home-1/TestimonialOne'
 
 const posts = [
-  {
-    id: 1,
-    slug: "/rooms/10-bed-dormitory",
-    image: "/assets/images/pages/room/1.webp",
-    bannerImg: "/assets/images/pages/room/1.webp",
-    title: "10-Bed Dormitory",
-    price: "100$",
-    author: "Mack jon",
-    description: "A spacious and thoughtfully designed dormitory, perfect for large groups seeking comfort, privacy, and modern amenities.",
-    authorImg: "author__one.png",
-    publishedDate: "20 Aug 2024",
-  },
-  {
-    id: 1,
-    slug: "/rooms/6-bed-dormitory",
-    image: "/assets/images/pages/room/1.webp",
-    bannerImg: "/assets/images/pages/room/1.webp",
-    title: "6-Bed Dormitory",
-    price: "100$",
-    author: "Mack jon",
-    description: "A cozy, group-friendly dormitory offering essential comforts for a relaxed and convenient stay.",
-    authorImg: "author__one.png",
-    publishedDate: "20 Aug 2024",
-  },
-
   {
     id: 1,
     slug: "/rooms/premium-room-twin-bedded",
@@ -48,7 +24,7 @@ const posts = [
     title: "Premium Room (Twin Bedded)",
     price: "100$",
     author: "Mack jon",
-    description: "A comfortable private room with twin beds, modern interiors, and all essential amenities for a peaceful stay.",
+    description: "A stylish and comfortable room with a twin size bed, designed for guests who prefer extra space and a relaxed stay.",
     authorImg: "author__one.png",
     publishedDate: "20 Aug 2024",
   },
@@ -64,6 +40,19 @@ const posts = [
     authorImg: "author__one.png",
     publishedDate: "20 Aug 2024",
   },
+
+  {
+    id: 1,
+    slug: "/rooms/club-room",
+    image: "/assets/images/pages/room/1.webp",
+    bannerImg: "/assets/images/pages/room/1.webp",
+    title: "Club Room",
+    price: "100$",
+    author: "Mack jon",
+    description: "Spacious and refined, offering added comfort and thoughtful conveniences.",
+    authorImg: "author__one.png",
+    publishedDate: "20 Aug 2024",
+  },
   {
     id: 1,
     slug: "/rooms/suite-room-without-balcony",
@@ -75,8 +64,56 @@ const posts = [
     description: "A spacious and elegant suite offering extra comfort and a calm, relaxing stay environment.",
     authorImg: "author__one.png",
     publishedDate: "20 Aug 2024",
+  },
+  {
+    id: 1,
+    slug: "/rooms/presidential-room",
+    image: "/assets/images/pages/room/1.webp",
+    bannerImg: "/assets/images/pages/room/1.webp",
+    title: "Presidential Room",
+    price: "100$",
+    author: "Mack jon",
+    description: "Our most luxurious and spacious accommodation for a truly exceptional stay.",
+    authorImg: "author__one.png",
+    publishedDate: "20 Aug 2024",
   }
 ];
+
+
+
+const testimonialData = [
+  {
+    id: 1,
+    author: "Ravindra Tayalur",
+    designation: "",
+    review:
+      "Stayed for two days at the new Hotel Eden. Rooms are spacious with modern amenities, staff were polite and helpful, housekeeping was good, and breakfast was excellent. Great stay within budget.",
+    img: "/assets/images/author/author-2x.webp",
+    rating: 5,
+    date: "2 years ago",
+  },
+  {
+    id: 2,
+    author: "Natalie Harper",
+    designation: "",
+    review:
+      "One of the nicest budget hotels I’ve stayed at in India. Staff were amazing, went out of their way to help, and the restaurant served delicious meals. It felt like a 5-star experience at a great price.",
+    img: "/assets/images/author/author-4.webp",
+    rating: 5,
+    date: "2 years ago",
+  },
+  {
+    id: 3,
+    author: "Umang Malhotra",
+    designation: "",
+    review:
+      "I loved my 1-night stay at Hotel Eden, Karwar. Spacious, comfortable rooms with cozy bathrooms, great breakfast buffet, and excellent staff service. Affordable and highly recommended.",
+    img: "/assets/images/author/author-4.webp",
+    rating: 5,
+    date: "2 years ago",
+  },
+];
+
 function page() {
   return (
     <>
@@ -91,8 +128,8 @@ function page() {
       
       {/* Updated Title and Description for 10-Bed Dormitory */}
       <HeroFive 
-        title="Suite Room with Balcony" 
-        description="Enjoy a more open and elevated stay in the Suite Room with Balcony at Eden Ember Castle, Gokarna. This spacious suite is designed for guests who appreciate extra room, elegant interiors, and the comfort of a private balcony. With a calm atmosphere and thoughtfully planned space, it is perfect for enjoying fresh air and spending quiet moments after a day of exploring Gokarna."
+        title="Suite Room (With Balcony)" 
+        description="The Suite Room at Hotel Eden, Karwar, offers spacious, elegantly designed interiors for a relaxing stay. This spacious suite is designed for guests who appreciate elegant interiors and the comfort of a private balcony."
       />
 
       {/* Fixed Syntax Errors in Props (removed commas) */}
@@ -101,16 +138,19 @@ function page() {
         subtitle="Room Specific Amenities"
         description=""
         amenities={[
-          { id: 1, title: "Air-Conditioning" },
-          { id: 1, title: "Attached Bathroom" },
-          { id: 1, title: "Complimentary Toiletries" },
-        
-          { id: 1, title: "Free Wifi" },
-          { id: 1, title: "Well-ventilated stay" },
+          { id: 1, title: "Fan" },
+          { id: 1, title: "Mini-Fridge" },
+          { id: 1, title: "Mineral Water" },
+          { id: 1, title: " Flat-screen TV" },
+          { id: 1, title: "Free Toiletries" },
+          { id: 1, title: "Satellite Channels" },
+            { id: 1, title: "Complimentary Breakfast" },
+    
 
         ]}
       />
-      
+      <GalleryOne />
+       <TestimonialOne testimonials={testimonialData} />
       <NewsletterOne title={"Book Your Stay Now"} />
       <BlogTwo title="Other Rooms" data={posts} />
       <FooterOne />

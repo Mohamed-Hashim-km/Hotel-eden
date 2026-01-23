@@ -48,7 +48,19 @@ function HeaderOne() {
                                                     Home
                                                 </Link>
                                             </li>
-
+  <li className="navigation__menu--item has-child has-arrow">
+                                                <Link href="/" className="navigation__menu--item__link">
+                                                   Locations
+                                                </Link>
+                                                <ul className="submenu sub__style" role="menu">
+                                                    <li role="menuitem">
+                                                        <Link href="/gokarna">Gokarna</Link>
+                                                    </li>
+                                                    <li role="menuitem">
+                                                        <Link href="/karwar">Karwar</Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             {/* Rooms Menu */}
                                             <li className="navigation__menu--item has-child has-arrow">
                                                 <Link href="/" className="navigation__menu--item__link">
@@ -75,17 +87,15 @@ function HeaderOne() {
                                                     <li role="menuitem" className="has-child has-arrow">
                                                         <Link href="/">Room Types</Link>
                                                         <ul className="sub__style" role="menu">
-                                                            <li role="menuitem">
-                                                                <Link href="/rooms/10-bed-dormitory">10-Bed Dormitory</Link>
-                                                            </li>
-                                                            <li role="menuitem">
-                                                                <Link href="/rooms/6-bed-dormitory">6-Bed Dormitory</Link>
-                                                            </li>
+                                                         
                                                             <li role="menuitem">
                                                                 <Link href="/rooms/premium-room-twin-bedded">Premium Room (Twin Bedded)</Link>
                                                             </li>
                                                             <li role="menuitem">
                                                                 <Link href="/rooms/premium-room-king-size-bedded">Premium Room (King-Size Bedded)</Link>
+                                                            </li>
+                                                              <li role="menuitem">
+                                                                <Link href="/rooms/club-room">Club Rooms</Link>
                                                             </li>
                                                             <li role="menuitem">
                                                                 <Link href="/rooms/suite-room-with-balcony">Suite Room (With Balcony)</Link>
@@ -93,37 +103,16 @@ function HeaderOne() {
                                                             <li role="menuitem">
                                                                 <Link href="/rooms/suite-room-without-balcony">Suite Room (Without Balcony)</Link>
                                                             </li>
+                                                             <li role="menuitem">
+                                                                <Link href="/rooms/presidential-room">Presidential Room</Link>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
 
                                             {/* Pages Menu */}
-                                            <li className="navigation__menu--item has-child has-arrow">
-                                                <Link href="/" className="navigation__menu--item__link">
-                                                    Pages
-                                                </Link>
-                                                <ul className="submenu sub__style" role="menu">
-                                                    <li role="menuitem">
-                                                        <Link href="/location">Location</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link href="/gokarna">Gokarna</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link href="/gallery">Gallery</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link href="/service">Service</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link href="/event">Event</Link>
-                                                    </li>
-                                                    <li role="menuitem">
-                                                        <Link href="/activities">Activities</Link>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                          
 
                                             {/* Blog Menu */}
                                             <li className="navigation__menu--item has-child has-arrow">
