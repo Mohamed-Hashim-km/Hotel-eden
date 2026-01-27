@@ -2,8 +2,7 @@
 
 import React, { useState } from "react";
 
-
-const FaqHomeOne = ({faqData, title, description}) => {
+const FaqHomeOne = ({ faqData, title, description }) => {
   const [activeId, setActiveId] = useState(1);
 
   const toggleAccordion = (id) => {
@@ -17,11 +16,9 @@ const FaqHomeOne = ({faqData, title, description}) => {
           {/* Left Side: Title and Description */}
           <div className="col-lg-5 mb-4 mb-lg-0 wow fadeInUp" data-wow-delay=".3s">
             <div className="faq__content__left">
-              <h2 className="title h2 lh-1 mb-20 text-capitalize">
-                {title || "Frequently Asked Questions" }
-              </h2>
+              <h2 className="title h2 lh-sm mb-20 text-capitalize">{title || "Frequently Asked Questions"}</h2>
               <p className="description">
-              {description || "Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sitoler aliquam sit nullam."}
+                {description || "Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sitoler aliquam sit nullam."}
               </p>
             </div>
           </div>

@@ -113,7 +113,7 @@ function page() {
       />
       <HeaderOne />
       <BannerTwo />
-
+  <Home5Blog title="In the Heart of Karwar" description="Stay close to everything that matters. Hotel Eden’s central location makes it easy to explore Karwar’s beaches, coastline, and key attractions while still enjoying a peaceful and comfortable stay." data={posts} />
       <Home5Blog
         title="Rooms Designed for Comfort and Space"
         description="At Hotel Eden, every room is crafted to be your personal retreat, combining elegant interiors, modern amenities and space to ensure a truly relaxing stay."

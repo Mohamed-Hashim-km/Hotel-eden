@@ -1,33 +1,59 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css"; // Core Swiper styles
+import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import RoomCardOne from "../room/RoomCardOne";
-import posts from "../data/spaces.json";
+
+// Data swapped from RoomsShowcase
+const roomTypes = [
+  {
+    title: "Premium Room",
+    description: "A well-appointed, comfortable space ideal for unwinding after a day in the city.",
+    image: "/assets/images/pages/contact.webp",
+    slug: "premium-room",
+  },
+  {
+    title: "Club Room",
+    description: "Spacious and refined, offering added comfort and thoughtful conveniences.",
+    image: "/assets/images/pages/contact.webp",
+    slug: "club-room",
+  },
+  {
+    title: "Suite Room",
+    description: "An expansive and elegant stay experience with enhanced comfort and style.",
+    image: "/assets/images/pages/contact.webp",
+    slug: "suite-room",
+  },
+  {
+    title: "Presidential Room",
+    description: "Our most luxurious and spacious accommodation for a truly exceptional stay.",
+    image: "/assets/images/pages/contact.webp",
+    slug: "presidential-room",
+  },
+  {
+    title: "Dormitory",
+    description: "A comfortable and well-maintained shared accommodation option.",
+    image: "/assets/images/pages/contact.webp",
+    slug: "6-bed-dormitory",
+  },
+];
 
 function RoomOne({ className }) {
-// Debug: Check if multiple rooms exist
-
   return (
     <div className={`rts__section section__padding ${className}`}>
       <div className="container">
         <div className="row">
           <div className="section__wrapper mb-40 wow fadeInUp">
             <div className="section__content__left">
-              {/* <span className="h6 subtitle__icon__two d-block wow fadeInUp">
-                                Room
-                            </span> */}
-              <h2 className="content__title h2 lh-1">Spaces That Inspire Every Stay</h2>
+              <h2 className="content__title h2 lh-1">Spaces Crafted For Mindful Living</h2>
             </div>
             <div className="section__content__right">
               <p>
-                From wellness and fitness to recreation and seamless service, Hotel Eden offers thoughtfully curated amenities designed to elevate every moment of your stay.
-
-              </p>
+               Hotel Eden offers rooms from Premium to Presidential, each blending spacious design with thoughtful amenities for a truly relaxing stay.  </p>
             </div>
           </div>
         </div>
@@ -55,15 +81,20 @@ function RoomOne({ className }) {
             1400: { slidesPerView: 4 },
           }}
         >
-          {/* Dynamic Room Data */}
-          {posts.length > 0 ? (
-            posts
-              .filter((data) => data.id >= 1 && data.id <= 5) // Now filtering only IDs 1 to 4
-              .map((data) => (
-                <SwiperSlide key={data.id}>
-                  <RoomCardOne Slug={data.slug} Img={`${data.image}`} Title={data.title} Price={data.price} Description={data.description} />
-                </SwiperSlide>
-              ))
+          {/* Swapped Data: Iterating roomTypes now */}
+          {roomTypes.length > 0 ? (
+            roomTypes.map((data, index) => (
+              <SwiperSlide key={index}>
+                {/* Note: roomTypes doesn't have a specific Price field, so passing null or a default string */}
+                <RoomCardOne 
+                    Slug={data.slug} 
+                    Img={data.image} 
+                    Title={data.title} 
+                    Price="" 
+                    Description={data.description} 
+                />
+              </SwiperSlide>
+            ))
           ) : (
             <p>No rooms available</p>
           )}

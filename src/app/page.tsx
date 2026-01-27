@@ -23,6 +23,7 @@ import RoomNine from "./room/RoomNine";
 import Home5Blog from "./home-5/Blog";
 import NewsletterOne from "./rooms/premium-room/Newsletter";
 import HeaderTwo from "./rooms/premium-room/Header";
+import DiningShowcase from "./home-1/DiningShowcase";
 
 import posts from "./data/location.json";
 import faqData from "./data/faq.json";
@@ -31,27 +32,63 @@ import testimonialData from "./data/testimonial-one.json";
 function Page() {
   // Use PascalCase for Next.js pages
   const facilities = [
-  {
-    title: "Tulip – The Gourmet Restaurant",
-    description: "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals."
-  },
-  {
-    title: "Food & Forest – Rooftop Dining",
-    description: "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings."
-  },
-  {
-    title: "Oyster Bay – Seafood Speciality",
-    description: "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste."
-  },
-  {
-    title: "The Golden Leaf Spa",
-    description: "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance."
-  },
-  {
-    title: "Terminal 5 – Events & Celebrations",
-    description: "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations."
-  }
-];
+    {
+      title: "Tulip – The Gourmet Restaurant",
+      description:
+        "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals.",
+      image: "/assets/images/insta/1.webp",
+    },
+    {
+      title: "Food & Forest – Rooftop Dining",
+      description: "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings.",
+      image: "/assets/images/insta/2.webp",
+    },
+    {
+      title: "Oyster Bay – Seafood Speciality",
+      description: "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste.",
+      image: "/assets/images/insta/4.webp",
+    },
+    {
+      title: "The Golden Leaf Spa",
+      description:
+        "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance.",
+      image: "/assets/images/insta/5.webp",
+    },
+    {
+      title: "Terminal 5 – Events & Celebrations",
+      description:
+        "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations.",
+      image: "/assets/images/insta/6.webp",
+    },
+    {
+      title: "Tulip – The Gourmet Restaurant",
+      description:
+        "Refined multi-cuisine dining in an elegant setting, where thoughtfully crafted flavours and warm service come together for memorable meals.",
+      image: "/assets/images/insta/1.webp",
+    },
+    {
+      title: "Food & Forest – Rooftop Dining",
+      description: "A relaxed rooftop experience with great views, food and crafted cocktails perfect for laid-back evenings and lively gatherings.",
+      image: "/assets/images/insta/2.webp",
+    },
+    {
+      title: "Oyster Bay – Seafood Speciality",
+      description: "Fresh coastal flavours inspired by the Konkan coast, serving authentic seafood dishes that celebrate tradition and taste.",
+      image: "/assets/images/insta/4.webp",
+    },
+    {
+      title: "The Golden Leaf Spa",
+      description:
+        "A calm sanctuary for relaxation and renewal, offering massages, wellness therapies, and beauty treatments designed to restore balance.",
+      image: "/assets/images/insta/5.webp",
+    },
+    {
+      title: "Terminal 5 – Events & Celebrations",
+      description:
+        "A stunning rooftop venue with panoramic views of Karwar, designed for weddings, corporate events, and unforgettable celebrations.",
+      image: "/assets/images/insta/6.webp",
+    },
+  ];
   return (
     <>
       <div style={{ overflow: "hidden" }}>
@@ -68,12 +105,14 @@ function Page() {
         <BannerOne />
         {/* <AdvanceForm /> */}
         <AboutThree />
-        <Home5Blog title="In the Heart of Karwar" description="Stay close to everything that matters. Hotel Eden’s central location makes it easy to explore Karwar’s beaches, coastline, and key attractions while still enjoying a peaceful and comfortable stay." data={posts} />
+        {/* <Home5Blog title="In the Heart of Karwar" description="Stay close to everything that matters. Hotel Eden’s central location makes it easy to explore Karwar’s beaches, coastline, and key attractions while still enjoying a peaceful and comfortable stay." data={posts} /> */}
         {/* <FacilitiesOne /> */}
-        <RoomsShowcase />
         <RoomOne className="" />
+        <RoomsShowcase />
+        
 
-        <GalleryOne title={"A Culinary Experience for Every Mood"} description={" From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof."} cta={"Explore All Restaurants"} />
+       
+        {/* <GalleryOne title={"A Culinary Experience for Every Mood"} description={" From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof."} cta={"Explore All Restaurants"} /> */}
         <TestimonialOne
           title="What Our Guests Love About Us"
           description="From authentic guest experiences and cherished memories, discover why Hotel Eden is the perfect choice for your stay."
@@ -93,9 +132,17 @@ function Page() {
           title="Everything You Need to Know"
           description=" Essential information to help you enjoy a seamless stay at Hotel Eden."
         />
-        <Home5Blog title=""  description="" data={facilities} />
+        <Home5Blog title="" description="" data={facilities} />
         {/* <VideoOne /> */}
         {/* <OfferOne /> */}
+
+         <DiningShowcase
+         data={facilities}
+          title="A Culinary Experience for Every Mood"
+          description="From fine dining and rooftop indulgence to the freshest coastal flavours, Hotel Eden brings you three distinctive dining destinations under one roof."
+         
+        />
+
 
         {/* <AdvanceForm/> */}
         <NewsletterOne />

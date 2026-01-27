@@ -4,7 +4,7 @@ import OffcanvasMenu from "./OffcanvasMenu";
 import Link from "next/link";
 import LoginForm from "../form/LoginForm";
 import SignUpForm from "../form/SignUpForm";
-import { FaEnvelope, FaMapMarkerAlt, FaAngleDown, FaSearch } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaAngleDown } from "react-icons/fa";
 
 function HeaderOne() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -102,22 +102,15 @@ function HeaderOne() {
                 {/* Center: Logo */}
                 <div className="main__logo text-center position-absolute start-50 translate-middle-x">
                   <Link href="/">
-                    <img style={{ height: "50px", transition: "all 0.4s" }} className="logo__class" src="/assets/images/logo/eden.svg" alt="eden" />
+                    <img style={{ height: "100px", transition: "all 0.4s" }} className="logo__class" src="/assets/images/logo/eden.svg" alt="eden" />
                   </Link>
                 </div>
 
                 {/* Right: Book Now */}
                 <div className="main__right d-flex align-items-center gap-4">
-                  <span className="d-none d-lg-block text-white pointer">
-                    <FaSearch size={14} />
-                  </span>
-                  <Link
-                    href="/room/the-ritz-carlton"
-                    className="theme-btn btn-style sm-btn fill text-uppercase bg-white text-dark border-0 hover-white"
-                    style={{ padding: "8px 25px", fontSize: "11px", letterSpacing: "1px", fontWeight: "bold" }}
-                  >
-                    <span>Book Now</span>
-                  </Link>
+                  <button href="/room-two" className="theme-btn btn-style fill no-border ">
+                      <span>Book Now</span>
+                    </button>
                   {/* Mobile Menu Button */}
                   <button className="theme-btn btn-style sm-btn fill menu__btn d-lg-none" onClick={() => setIsOffcanvasOpen(true)}>
                     <span>
@@ -127,57 +120,49 @@ function HeaderOne() {
                 </div>
               </div>
 
-              {/* Separator Line */}
-              <div className="w-100 border-bottom border-white opacity-25 d-none d-lg-block mb-1"></div>
+              {/* Horizontal Line Row */}
+              <div className="header-line w-100 d-none d-lg-block">
+                <div className="container-fluid ">
+                  <div className="border-top opacity-25"></div>
+                </div>
+              </div>
 
               {/* Bottom Row: Navigation */}
-              <div className="header-bottom w-100 d-flex justify-content-center py-2 d-none d-lg-flex">
+              <div className="header-bottom w-100 d-none d-lg-flex" style={{ display: "flex", justifyContent: "center", padding: "10px 0" }}>
                 <nav className="navigation__menu" id="main__menu">
-                  <ul className="list-unstyled d-flex gap-5 m-0 align-items-center">
+                  <ul className="list-unstyled m-0 align-items-center" style={{ display: "flex", gap: "25px", listStyle: "none" }}>
                     <li className="navigation__menu--item">
-                      <Link href="/" className="navigation__menu--item__link text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
+                      <Link href="/" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Stays
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link href="/dining" className="navigation__menu--item__link text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
+                      <Link href="/dining" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Dining
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link
-                        href="/entertainment"
-                        className="navigation__menu--item__link text-uppercase"
-                        style={{ letterSpacing: "2px", fontSize: "11px" }}
-                      >
+                      <Link href="/entertainment" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Entertainment
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link
-                        href="/aquaventure"
-                        className="navigation__menu--item__link text-uppercase"
-                        style={{ letterSpacing: "2px", fontSize: "11px" }}
-                      >
+                      <Link href="/aquaventure" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Aquaventure World
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link
-                        href="/experiences"
-                        className="navigation__menu--item__link text-uppercase"
-                        style={{ letterSpacing: "2px", fontSize: "11px" }}
-                      >
+                      <Link href="/experiences" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Experiences
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link href="/events" className="navigation__menu--item__link text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
+                      <Link href="/events" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Events
                       </Link>
                     </li>
                     <li className="navigation__menu--item">
-                      <Link href="/offers" className="navigation__menu--item__link text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
+                      <Link href="/offers" className="text-uppercase" style={{ letterSpacing: "2px", fontSize: "11px" }}>
                         Offers
                       </Link>
                     </li>

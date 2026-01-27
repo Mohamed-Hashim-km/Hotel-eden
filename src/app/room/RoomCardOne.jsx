@@ -10,7 +10,8 @@ function RoomCardOne(props) {
         Description
     } = props;
     return (
-        <div className="room__slide__box radius-6">
+      <Link href={`/rooms/${Slug}`}>
+      <div className="room__slide__box radius-6">
             <div className="room__thumbnail jara-mask-2 jarallax">
                 <img
                     height={585}
@@ -21,7 +22,7 @@ function RoomCardOne(props) {
                 />
             </div>
             <div className="room__content">
-                <Link href={`/room/${Slug}`} className="room__title">
+                <Link href={`/rooms/${Slug}`} className="room__title">
                     <h5>{Title}</h5>
                 </Link>
                 <div className="room__content__meta">
@@ -39,6 +40,7 @@ function RoomCardOne(props) {
                 {/* <span className="h4 rent mb-0 mt-15 d-block">{Price || '120$'}</span> */}
             </div>
         </div>
+      </Link>
     )
 }
 

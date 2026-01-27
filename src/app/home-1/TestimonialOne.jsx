@@ -42,45 +42,60 @@ function TestimonialOne({ testimonials = [], textSize = "", title = " Testimonia
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-11">
+            <div className="col-lg-12">
               <div className="">
                 <Swiper
                   className="testimonial__slider overflow-hidden"
                   modules={[Navigation]}
                   direction="horizontal"
                   slidesPerView={1}
-                  spaceBetween={0}
+                  spaceBetween={30}
                   loop={true}
-                  centeredSlides={true}
-                  autoplay="false"
+                  centeredSlides={false}
+                  autoplay={false}
                   navigation={{
                     nextEl: ".button-next",
                     prevEl: ".button-prev",
                   }}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 25,
+                    },
+                    1200: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
+                  }}
                   speed={1000}
-                  effect="slide"
                 >
                   {data?.map((item, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="testimonial__item__content">
-                        <div className="author__icon">
-                          <img src={item.img} alt={item.author} />
-                        </div>
-                        <div className="testimonial__content">
-                          <div className="single__slider__item ">
-                            <div className="slider__rating d-flex align-items-center mb-20 gap-2">
-                              {[...Array(item.rating || 5)].map((_, i) => (
-                                <i key={i} className="flaticon-star" />
-                              ))}
-                              {item.date && <span className="text-muted mb-0 ms-2">{item.date}</span>}
+                    <SwiperSlide key={index} className="h-auto">
+                      <div className="testimonial__item__content h-100 p-5 border radius-10 bg-white shadow-sm d-flex flex-column">
+                        <div className="testimonial__content flex-grow-1">
+                          <div className="single__slider__item h-100 d-flex flex-column justify-content-between">
+                            <div>
+                              <div className="slider__rating d-flex align-items-center mb-20 gap-2">
+                                {[...Array(item.rating || 5)].map((_, i) => (
+                                  <i key={i} className="flaticon-star text-warning" />
+                                ))}
+                                {item.date && <span className="text-muted mb-0 ms-2">{item.date}</span>}
+                              </div>
+                              <span
+                                className={`slider__text d-block ${textSize}`}
+                                style={{ fontSize: "16px", lineHeight: "26px", marginBottom: "30px" }}
+                              >
+                                "{item.review}"
+                              </span>
                             </div>
-                            <span className={`slider__text d-block ${textSize}`} style={{ fontSize: "18px", lineHeight: "28px" }}>
-                              {item.review}
-                            </span>
-                            <div className="slider__author__info">
+                            <div className="slider__author__info mt-auto">
                               <div className="slider__author__info__content">
                                 <h6 className="mb-0">{item.author}</h6>
-                                {item.designation && <span>{item.designation}</span>}
+                                {item.designation && <span className="text-muted small">{item.designation}</span>}
                               </div>
                             </div>
                           </div>

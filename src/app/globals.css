@@ -7,42 +7,61 @@
   z-index: 999;
   background-color: transparent !important; /* Transparent BG initially */
   transition:
-    background-color 0.4s ease,
-    backdrop-filter 0.4s ease,
-    box-shadow 0.4s ease,
-    padding 0.4s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color 0.5s ease-in-out,
+    backdrop-filter 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out,
+    padding 0.5s ease-in-out,
+    top 0.5s ease-in-out;
+  border-bottom: none;
 }
 
 /* Default state (Top): White text */
-.main__header .navigation__menu--item__link,
+.main__header .navigation__menu--item a,
 .main__header .navigation__menu--item,
 .main__header .header-top-left,
 .main__header .main__right .text-white {
   color: #ffffff !important;
+  transition:
+    color 0.4s ease,
+    fill 0.4s ease;
 }
 
-/* Sticky state (Scrolled) OR Hover state: Subtle White + Blur */
+/* Sticky state (Scrolled) OR Hover state: Solid White */
 .main__header.is__sticky,
 .main__header:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important; /* Reduced opacity */
-  backdrop-filter: blur(8px) !important; /* Reduced blur */
-  -webkit-backdrop-filter: blur(8px) !important;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   padding-bottom: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: none;
+  animation: none !important; /* Disable template slide-down animation */
+  transform: none !important; /* Disable template transforms */
+  top: 0 !important; /* Ensure it stays at the top */
 }
 
 /* Switch text to dark on sticky OR hover */
-.main__header.is__sticky .navigation__menu--item__link,
+.main__header.is__sticky .navigation__menu--item a,
 .main__header.is__sticky .navigation__menu--item,
 .main__header.is__sticky .header-top-left,
 .main__header.is__sticky .main__right .text-white,
-.main__header:hover .navigation__menu--item__link,
+.main__header:hover .navigation__menu--item a,
 .main__header:hover .navigation__menu--item,
 .main__header:hover .header-top-left,
 .main__header:hover .main__right .text-white {
   color: #1c1c1c !important;
+}
+
+/* Default separator line color (light white) */
+.main__header .header-line .border-top {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transition: border-color 0.4s ease;
+}
+
+/* Update separator line color on sticky OR hover */
+.main__header.is__sticky .header-line .border-top,
+.main__header:hover .header-line .border-top {
+  border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Invert icons color on sticky OR hover if needed */
@@ -50,5 +69,5 @@
 .main__header.is__sticky .main__right svg,
 .main__header:hover .header-top-left svg,
 .main__header:hover .main__right svg {
-  fill: #1c1c1c;
+  fill: #1c1c1c !important;
 }
