@@ -8,11 +8,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import Link from "next/link";
+import BookingBar from "./BookingBar";
 function BannerOne() {
   return (
     <>
       {/* banner area */}
-      <div className="rts__section banner__area is__home__one banner__height banner__center">
+      <div
+        className="rts__section banner__area is__home__one banner__height banner__center"
+        style={{ marginBottom: "60px", position: "relative", zIndex: 5 }}
+      >
         <div className="swiper-wrapper">
           {/* single slider item */}
 
@@ -28,8 +32,7 @@ function BannerOne() {
                                             </span> */}
                   <h1> A New Standard of Comfort</h1>
                   <p className="sub__text">
-                  Defined by comfort, calm and considered design, every stay offers a refined environment for rest and renewal 
-
+                    Defined by comfort, calm and considered design, every stay offers a refined environment for rest and renewal
                   </p>
                   <div className="d-flex justify-content-center  gap-4 ">
                     <button href="/room-two" className="theme-btn btn-style fill no-border ">
@@ -40,6 +43,15 @@ function BannerOne() {
                     </button>
                   </div>
                 </div>
+              </div>
+            </div>
+            {/* Booking Bar */}
+            <div
+              className="row justify-content-center"
+              style={{ position: "absolute", bottom: "0", left: "0", right: "0", transform: "translateY(50%)", zIndex: 20 }}
+            >
+              <div className="col-lg-11 col-xl-11">
+                <BookingBar />
               </div>
             </div>
           </div>

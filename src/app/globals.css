@@ -1,71 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
-/* 1. The Keyframe Animation */
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* 2. The Sticky Class */
-.main__header.is__sticky {
+/* 2. The Header Styles */
+.main__header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* Ensure it sits on top */
-  background-color: #ffffff; /* Match your theme bg */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional shadow for depth */
-  
-  /* Apply the animation */
-  animation: slideDown 0.35s ease-in-out;
+  z-index: 999;
+  background-color: transparent !important; /* Transparent BG initially */
+  transition:
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    box-shadow 0.4s ease,
+    padding 0.4s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Default state (Top): White text */
+.main__header .navigation__menu--item__link,
+.main__header .navigation__menu--item,
+.main__header .header-top-left,
+.main__header .main__right .text-white {
+  color: #ffffff !important;
+}
+
+/* Sticky state (Scrolled) OR Hover state: Subtle White + Blur */
+.main__header.is__sticky,
+.main__header:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important; /* Reduced opacity */
+  backdrop-filter: blur(8px) !important; /* Reduced blur */
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Switch text to dark on sticky OR hover */
+.main__header.is__sticky .navigation__menu--item__link,
+.main__header.is__sticky .navigation__menu--item,
+.main__header.is__sticky .header-top-left,
+.main__header.is__sticky .main__right .text-white,
+.main__header:hover .navigation__menu--item__link,
+.main__header:hover .navigation__menu--item,
+.main__header:hover .header-top-left,
+.main__header:hover .main__right .text-white {
+  color: #1c1c1c !important;
+}
+
+/* Invert icons color on sticky OR hover if needed */
+.main__header.is__sticky .header-top-left svg,
+.main__header.is__sticky .main__right svg,
+.main__header:hover .header-top-left svg,
+.main__header:hover .main__right svg {
+  fill: #1c1c1c;
 }

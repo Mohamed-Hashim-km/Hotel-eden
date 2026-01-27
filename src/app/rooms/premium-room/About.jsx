@@ -14,9 +14,7 @@ function AboutThree() {
     <>
       {/* about us */}
       <div className="rts__section about__area is__home__two section__padding">
-        <div className="section__shape">
-          <img src="/assets/images/about/section__shape.svg" alt="" />
-        </div>
+        
         <div className="container">
           <div className="row">
             <div className="about__wrapper">

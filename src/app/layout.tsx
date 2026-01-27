@@ -15,8 +15,9 @@ import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
 import "../../assets/css/style.css";
 import "react-datepicker/dist/react-datepicker.css";
-import 'aos/dist/aos.css';
-import Script from 'next/script';
+import "aos/dist/aos.css";
+import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Moonlit - Hotel and Resturant NextJs Template",
@@ -33,9 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{overflowX: "hidden"}}>
+      <body style={{ overflowX: "hidden" }}>
         {children}
-        <Script src="/assets/js/smoothscroll.js" strategy="afterInteractive"/>
+        <Script src="/assets/js/smoothscroll.js" strategy="afterInteractive" />
       </body>
     </html>
   );
